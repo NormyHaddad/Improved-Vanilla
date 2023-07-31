@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "net.garunix.tutorialmod.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"TorchflowerGlow",
+		"PitcherFireflies"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

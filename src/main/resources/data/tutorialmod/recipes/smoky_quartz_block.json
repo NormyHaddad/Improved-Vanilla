@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:smoky_quartz"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:smoky_quartz_block",
+    "count": 1
+  }
+}

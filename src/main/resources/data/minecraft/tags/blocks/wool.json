@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:glow_blue_wool",
+    "tutorialmod:glow_brown_wool",
+    "tutorialmod:glow_cyan_wool",
+    "tutorialmod:glow_gray_wool",
+    "tutorialmod:glow_green_wool",
+    "tutorialmod:glow_light_blue_wool",
+    "tutorialmod:glow_light_gray_wool",
+    "tutorialmod:glow_lime_wool",
+    "tutorialmod:glow_magenta_wool",
+    "tutorialmod:glow_orange_wool",
+    "tutorialmod:glow_pink_wool",
+    "tutorialmod:glow_purple_wool",
+    "tutorialmod:glow_red_wool",
+    "tutorialmod:glow_white_wool",
+    "tutorialmod:glow_yellow_wool"
+  ]
+}

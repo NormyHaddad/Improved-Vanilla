@@ -1,0 +1,23 @@
+{
+  "temperature": 0.7,
+  "downfall": 0.8,
+  "has_precipitation": true,
+  "effects": {
+    "sky_color": 7855615,
+    "fog_color": 12638463,
+    "water_color": 2396561,
+    "water_fog_color": 10514020,
+    "grass_color": 12758016,
+    "foliage_color": 16750592
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+    [
+      "tutorialmod:maple_placed",
+      "minecraft:patch_grass_plain",
+      "minecraft:patch_tall_grass"
+    ]
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "tutorialmod:block/smooth_smoky_quartz_block"
+  }
+}
