@@ -18,6 +18,7 @@ import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> MAPLE_KEY = registerKey("maple");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> MEGA_MAPLE_KEY = registerKey("mega_maple");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
