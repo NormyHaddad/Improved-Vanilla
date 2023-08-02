@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "tutorialmod:block/maple_planks",
+    "side": "tutorialmod:block/maple_planks",
+    "top": "tutorialmod:block/maple_planks"
+  }
+}

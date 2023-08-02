@@ -35,8 +35,11 @@ public class ModBlocks {
     public static final Block MAPLE_LEAVES = registerBlock("maple_leaves", new LeavesBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES).mapColor(MapColor.ORANGE).nonOpaque()), ItemGroups.NATURAL);
     public static final Block MAPLE_SAPLING = registerBlock("maple_sapling", new SaplingBlock(new MapleSaplingGenerator(),
-            FabricBlockSettings.copyOf(Blocks.CHERRY_SAPLING).mapColor(MapColor.TERRACOTTA_BROWN)), ItemGroups.NATURAL);
+            FabricBlockSettings.copyOf(Blocks.CHERRY_SAPLING).mapColor(MapColor.ORANGE)), ItemGroups.NATURAL);
     public static final Block MAPLE_SLAB = registerBlock("maple_slab", new SlabBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_SLAB).mapColor(MapColor.OFF_WHITE)), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAPLE_STAIRS = registerBlock("maple_stairs", new StairsBlock(
+            ModBlocks.MAPLE_PLANKS.getDefaultState(),
             FabricBlockSettings.copyOf(Blocks.CHERRY_SLAB).mapColor(MapColor.OFF_WHITE)), ItemGroups.BUILDING_BLOCKS);
     //endregion
 
