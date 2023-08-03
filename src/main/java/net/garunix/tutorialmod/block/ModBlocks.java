@@ -40,7 +40,11 @@ public class ModBlocks {
             FabricBlockSettings.copyOf(Blocks.CHERRY_SLAB).mapColor(MapColor.OFF_WHITE)), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAPLE_STAIRS = registerBlock("maple_stairs", new StairsBlock(
             ModBlocks.MAPLE_PLANKS.getDefaultState(),
-            FabricBlockSettings.copyOf(Blocks.CHERRY_SLAB).mapColor(MapColor.OFF_WHITE)), ItemGroups.BUILDING_BLOCKS);
+            FabricBlockSettings.copyOf(Blocks.CHERRY_STAIRS).mapColor(MapColor.OFF_WHITE)), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAPLE_FENCE = registerBlock("maple_fence", new FenceBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE).mapColor(MapColor.OFF_WHITE)), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAPLE_FENCE_GATE = registerBlock("maple_fence_gate", new FenceGateBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE_GATE).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY), ItemGroups.BUILDING_BLOCKS);
     //endregion
 
     public static final Block SMOOTH_SMOKY_QUARTZ_BLOCK = registerBlock("smooth_smoky_quartz_block",
@@ -52,6 +56,9 @@ public class ModBlocks {
     public static final Block ROTTEN_FLESH_BLOCK = registerBlock("rotten_flesh_block",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHER_WART_BLOCK).mapColor(MapColor.TERRACOTTA_RED)),
             ItemGroups.BUILDING_BLOCKS);
+    public static final Block BUNCHBERRY_FLOWER = registerBlock("bunchberry_flower",
+            new FlowerbedBlock(FabricBlockSettings.copyOf(Blocks.PINK_PETALS).mapColor(MapColor.TERRACOTTA_WHITE)),
+            ItemGroups.NATURAL);
 
     //region Glowing wool blocks
     public static final Block GLOW_BLUE_WOOL = registerBlock("glow_blue_wool",
