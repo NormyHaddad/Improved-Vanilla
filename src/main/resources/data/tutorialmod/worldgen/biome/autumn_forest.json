@@ -16,6 +16,7 @@
   "features": [
     [
       "tutorialmod:maple_placed",
+      "tutorialmod:mega_maple_placed",
       "minecraft:patch_grass_plain",
       "minecraft:patch_tall_grass"
     ]

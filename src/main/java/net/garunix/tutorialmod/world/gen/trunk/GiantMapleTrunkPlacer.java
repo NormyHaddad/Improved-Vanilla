@@ -1,6 +1,8 @@
 package net.garunix.tutorialmod.world.gen.trunk;
 
 import com.google.common.collect.ImmutableList;
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
@@ -13,6 +15,8 @@ import java.util.List;
 import java.util.function.BiConsumer;
 
 public class GiantMapleTrunkPlacer extends GiantTrunkPlacer {
+    public static final Codec<GiantMapleTrunkPlacer> CODEC = RecordCodecBuilder.create(
+            instance -> GiantTrunkPlacer.fillTrunkPlacerFields(instance).apply(instance, GiantMapleTrunkPlacer::new));
     public GiantMapleTrunkPlacer(int i, int j, int k) { super(i, j, k); }
 
     private void setLog(TestableWorld world, BiConsumer<BlockPos, BlockState> replacer, Random random, BlockPos.Mutable tmpPos, TreeFeatureConfig config, BlockPos startPos, int dx, int dy, int dz) {
@@ -30,7 +34,7 @@ public class GiantMapleTrunkPlacer extends GiantTrunkPlacer {
         BlockPos.Mutable mutable = new BlockPos.Mutable();
         for (int i = 0; i < height; ++i) {
             this.setLog(world, replacer, random, mutable, config, startPos, 0, i, 0);
-            if (i >= height - 1) continue;
+            //if (i >= height - 1) continue;
             this.setLog(world, replacer, random, mutable, config, startPos, 1, i, 0);
             this.setLog(world, replacer, random, mutable, config, startPos, 1, i, 1);
             this.setLog(world, replacer, random, mutable, config, startPos, 0, i, 1);
@@ -40,10 +44,10 @@ public class GiantMapleTrunkPlacer extends GiantTrunkPlacer {
 
         for (int i = 0; i < 3; ++i)
         {
-            this.setLog(world, replacer, random, mutable, config, startPos, -xOffset, i, -zOffset);
-            this.setLog(world, replacer, random, mutable, config, startPos, xOffset, i, -zOffset);
-            this.setLog(world, replacer, random, mutable, config, startPos, xOffset, i, zOffset);
-            this.setLog(world, replacer, random, mutable, config, startPos, -xOffset, i, zOffset);
+            this.setLog(world, replacer, random, mutable, config, startPos, -xOffset, i + height - 3, 1);
+            this.setLog(world, replacer, random, mutable, config, startPos, xOffset + 1, i + height - 3, 0);
+            this.setLog(world, replacer, random, mutable, config, startPos, 1, i + height - 3, zOffset + 1);
+            this.setLog(world, replacer, random, mutable, config, startPos, 0, i + height - 3, -zOffset);
             xOffset++;
             zOffset++;
         }

@@ -9,6 +9,7 @@ import net.garunix.tutorialmod.datagen.ModWorldGenerator;
 import net.garunix.tutorialmod.item.ModItemGroup;
 import net.garunix.tutorialmod.item.ModItems;
 import net.garunix.tutorialmod.world.gen.ModWorldGeneration;
+import net.garunix.tutorialmod.world.gen.trunk.ModTrunkPlacerType;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -26,6 +27,8 @@ public class TutorialMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItems.assignItemGroups();
+
+		ModTrunkPlacerType.init();
 
 		ModWorldGeneration.generateModWorldGen();
 

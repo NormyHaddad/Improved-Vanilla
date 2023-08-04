@@ -1,5 +1,5 @@
 {
-  "feature": "tutorialmod:maple",
+  "feature": "tutorialmod:mega_maple",
   "placement": [
     {
       "type": "minecraft:count",
@@ -8,11 +8,11 @@
         "distribution": [
           {
             "data": 1,
-            "weight": 5
+            "weight": 3
           },
           {
             "data": 1,
-            "weight": 2
+            "weight": 1
           }
         ]
       }

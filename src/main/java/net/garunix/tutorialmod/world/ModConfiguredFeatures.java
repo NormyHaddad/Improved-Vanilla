@@ -2,6 +2,7 @@ package net.garunix.tutorialmod.world;
 
 import net.garunix.tutorialmod.TutorialMod;
 import net.garunix.tutorialmod.block.ModBlocks;
+import net.garunix.tutorialmod.world.gen.trunk.GiantMapleTrunkPlacer;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -13,6 +14,7 @@ import net.minecraft.world.gen.feature.FeatureConfig;
 import net.minecraft.world.gen.feature.TreeFeatureConfig;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.foliage.CherryFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
@@ -28,6 +30,14 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.MAPLE_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(1), 4),
                 new TwoLayersFeatureSize(3, 1, 5)).build());
+
+        register(context, MEGA_MAPLE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.MAPLE_LOG),
+                new GiantMapleTrunkPlacer(10, 5, 5),
+                BlockStateProvider.of(ModBlocks.MAPLE_LEAVES),
+                new CherryFoliagePlacer(ConstantIntProvider.create(5), ConstantIntProvider.create(0), ConstantIntProvider.create(5),
+                    0.2f, 0.5f, 0.5f, 0.3f),
+                new TwoLayersFeatureSize(5, 2, 7)).build());
     }
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

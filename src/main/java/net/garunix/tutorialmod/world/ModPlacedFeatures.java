@@ -19,13 +19,17 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> MAPLE_PLACED_KEY = registerKey("maple_placed");
+    public static final RegistryKey<PlacedFeature> MEGA_MAPLE_PLACED_KEY = registerKey("mega_maple_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
-        register(context, MAPLE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MAPLE_KEY),
-                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(1, 0.1f, 2), ModBlocks.MAPLE_SAPLING));
+        register(context, MAPLE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(
+            ModConfiguredFeatures.MAPLE_KEY), VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                PlacedFeatures.createCountExtraModifier(2, 0.2f, 2), ModBlocks.MAPLE_SAPLING));
+        register(context, MEGA_MAPLE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(
+            ModConfiguredFeatures.MEGA_MAPLE_KEY), VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                PlacedFeatures.createCountExtraModifier(1, 0.1f, 1), ModBlocks.MAPLE_SAPLING));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
