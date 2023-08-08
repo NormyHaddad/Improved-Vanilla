@@ -27,6 +27,9 @@
   "block.tutorialmod.maple_leaves": "Maple Leaves",
   "block.tutorialmod.maple_sapling": "Maple Sapling",
   "block.tutorialmod.maple_slab": "Maple Slab",
+  "block.tutorialmod.maple_fence": "Maple Fence",
+  "block.tutorialmod.maple_fence_gate": "Maple Fence Gate",
+  "block.tutorialmod.maple_trapdoor": "Maple Trapdoor",
 
   "biome.tutorialmod.autumn_forest": "Autumn Forest",
   "itemgroup.garunix": "Garunix's Items"

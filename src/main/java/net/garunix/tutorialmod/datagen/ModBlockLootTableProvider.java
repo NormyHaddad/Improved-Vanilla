@@ -12,10 +12,6 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(MAPLE_LOG, drops(MAPLE_LOG.asItem()));
-        addDrop(MAPLE_WOOD, drops(MAPLE_WOOD.asItem()));
-        addDrop(STRIPPED_MAPLE_WOOD, drops(STRIPPED_MAPLE_WOOD.asItem()));
-        addDrop(STRIPPED_MAPLE_LOG, drops(STRIPPED_MAPLE_LOG.asItem()));
-        addDrop(MAPLE_PLANKS, drops(MAPLE_PLANKS.asItem()));
+        //addDrop(MAPLE_TRAPDOOR, drops(MAPLE_TRAPDOOR.asItem()));
     }
 }

@@ -1,1 +1,6 @@
-// 1.20.1	2023-07-30T18:42:26.5785001	Tutorial mod/Model Definitions
+// 1.20.1	2023-08-05T21:22:14.8763402	Tutorial mod/Model Definitions
+9b93158657366365b9c1923d9b80230e736cb70b assets\tutorialmod\models\item\maple_trapdoor.json
+90af20a8ce534d533e98ae22c0a2cbe50d605855 assets\tutorialmod\models\block\maple_trapdoor_top.json
+b72bfcf0097b6426f8fa7f65a0b767e236779b58 assets\tutorialmod\blockstates\maple_trapdoor.json
+e6f112fcbd453b4d54979716cd81b6be656c3179 assets\tutorialmod\models\block\maple_trapdoor_bottom.json
+a64149a3dca11b79134bf13591ef75248496ca32 assets\tutorialmod\models\block\maple_trapdoor_open.json

@@ -29,7 +29,7 @@ public class ModPlacedFeatures {
                 PlacedFeatures.createCountExtraModifier(2, 0.2f, 2), ModBlocks.MAPLE_SAPLING));
         register(context, MEGA_MAPLE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(
             ModConfiguredFeatures.MEGA_MAPLE_KEY), VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                PlacedFeatures.createCountExtraModifier(1, 0.1f, 1), ModBlocks.MAPLE_SAPLING));
+                PlacedFeatures.createCountExtraModifier(0, 0.5f, 1), ModBlocks.MAPLE_SAPLING));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

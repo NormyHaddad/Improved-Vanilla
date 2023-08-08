@@ -10,7 +10,6 @@ import java.util.function.Consumer;
 
 public class ModRecipeGen extends FabricRecipeProvider {
     public ModRecipeGen(FabricDataOutput output) {
-
         super(output);
     }
     public void generate(Consumer<RecipeJsonProvider> exporter) {

@@ -1,6 +1,2 @@
-// 1.20.1	2023-07-30T18:42:26.5765014	Tutorial mod/Block Loot Tables
-9688d0f9710f1490ddcb24a968b9795f9e48dcf8 data\tutorialmod\loot_tables\blocks\stripped_maple_log.json
-31cbc35a3fe8efb36eac275bd943d25ff5aaad2a data\tutorialmod\loot_tables\blocks\maple_log.json
-a9943e492403bcb2b1cb288efd1a6911e539c905 data\tutorialmod\loot_tables\blocks\maple_wood.json
-ddee29558fb4407a403c3544813377b7443a66bb data\tutorialmod\loot_tables\blocks\maple_planks.json
-2ce30e68da073ef2bad07241647d5f95583430c5 data\tutorialmod\loot_tables\blocks\stripped_maple_wood.json
+// 1.20.1	2023-08-05T21:22:14.87434	Tutorial mod/Block Loot Tables
+bfa5635202e60d65b6b9ba73bae32c5b68636e6f data\tutorialmod\loot_tables\blocks\maple_trapdoor.json

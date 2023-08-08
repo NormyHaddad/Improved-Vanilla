@@ -10,7 +10,7 @@
     },
     "foliage_placer": {
       "type": "minecraft:cherry_foliage_placer",
-      "offset": 0,
+      "offset": 1,
       "radius": 5,
       "height": 5,
       "wide_bottom_layer_hole_chance": 0.3,
