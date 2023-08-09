@@ -7,6 +7,7 @@ import net.garunix.tutorialmod.TutorialMod;
 import net.garunix.tutorialmod.item.ModItemGroup;
 import net.garunix.tutorialmod.world.tree.MapleSaplingGenerator;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -61,6 +62,9 @@ public class ModBlocks {
     public static final Block BUNCHBERRY_FLOWER = registerBlock("bunchberry_flower",
             new FlowerbedBlock(FabricBlockSettings.copyOf(Blocks.PINK_PETALS).mapColor(MapColor.TERRACOTTA_WHITE)),
             ItemGroups.NATURAL);
+    public static final Block GLACIER_LILY = registerBlock("glacier_lily",
+            new FlowerBlock(StatusEffects.SATURATION, 10, FabricBlockSettings.copyOf(Blocks.LILY_OF_THE_VALLEY)
+                    .mapColor(MapColor.DARK_GREEN)), ItemGroups.NATURAL);
 
     //region Glowing wool blocks
     public static final Block GLOW_BLUE_WOOL = registerBlock("glow_blue_wool",
