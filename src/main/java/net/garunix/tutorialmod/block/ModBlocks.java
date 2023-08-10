@@ -48,6 +48,8 @@ public class ModBlocks {
             FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE_GATE).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAPLE_TRAPDOOR = registerBlock("maple_trapdoor", new TrapdoorBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_TRAPDOOR).mapColor(MapColor.OFF_WHITE), BlockSetType.CHERRY), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAPLE_DOOR = registerBlock("maple_door", new DoorBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR).mapColor(MapColor.OFF_WHITE), BlockSetType.CHERRY), ItemGroups.BUILDING_BLOCKS);
     //endregion
 
     public static final Block SMOOTH_SMOKY_QUARTZ_BLOCK = registerBlock("smooth_smoky_quartz_block",
@@ -59,12 +61,18 @@ public class ModBlocks {
     public static final Block ROTTEN_FLESH_BLOCK = registerBlock("rotten_flesh_block",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHER_WART_BLOCK).mapColor(MapColor.TERRACOTTA_RED)),
             ItemGroups.BUILDING_BLOCKS);
+
+    //region Custom Plants
     public static final Block BUNCHBERRY_FLOWER = registerBlock("bunchberry_flower",
             new FlowerbedBlock(FabricBlockSettings.copyOf(Blocks.PINK_PETALS).mapColor(MapColor.TERRACOTTA_WHITE)),
             ItemGroups.NATURAL);
     public static final Block GLACIER_LILY = registerBlock("glacier_lily",
             new FlowerBlock(StatusEffects.SATURATION, 10, FabricBlockSettings.copyOf(Blocks.LILY_OF_THE_VALLEY)
                     .mapColor(MapColor.DARK_GREEN)), ItemGroups.NATURAL);
+    public static final Block FIREWEED = registerBlock("fireweed",
+            new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.LILAC) .mapColor(MapColor.DARK_GREEN)),
+            ItemGroups.NATURAL);
+    //endregion
 
     //region Glowing wool blocks
     public static final Block GLOW_BLUE_WOOL = registerBlock("glow_blue_wool",

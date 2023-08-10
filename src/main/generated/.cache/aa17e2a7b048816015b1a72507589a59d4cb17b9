@@ -1,4 +1,11 @@
-// 1.20.1	2023-08-08T17:35:41.276333	Tutorial mod/Model Definitions
-4bee49e5f3e781ace0b2f14cf8e3528a955e815e assets\tutorialmod\models\block\glacier_lily.json
-63ff6b53191496ed4866ab0fb10e28ceec96db43 assets\tutorialmod\models\item\glacier_lily.json
-24a120feeb6c82e15f7c524ca88bee8ce9a75569 assets\tutorialmod\blockstates\glacier_lily.json
+// 1.20.1	2023-08-10T13:02:35.2165006	Tutorial mod/Model Definitions
+d9abe6fd5d8caf46ae69b38740741bc59323af87 assets\tutorialmod\models\block\maple_door_top_left.json
+9740d77d2de9a22ab6f856c1b2f86899ee35797c assets\tutorialmod\models\block\maple_door_bottom_left.json
+1e93604bc61d067f9956e53235cc63e70a5f5a36 assets\tutorialmod\models\item\maple_door.json
+3cd07b102706cb841fefabd66f744415cab0f174 assets\tutorialmod\models\block\maple_door_top_right.json
+9fa23357ecc22a42ddd04cd77b9213e7d1c675d7 assets\tutorialmod\models\block\maple_door_bottom_right.json
+718312d270cada51e73e109a13c1a099a7f2d13f assets\tutorialmod\models\block\maple_door_bottom_right_open.json
+145d80a534579b4406227b8ff087684832e628b9 assets\tutorialmod\blockstates\maple_door.json
+26f8f94e64620e1d50401ee468543dfaafa329be assets\tutorialmod\models\block\maple_door_top_right_open.json
+d37b4ba7b7242e1199f975b2953e5dcd45748af7 assets\tutorialmod\models\block\maple_door_bottom_left_open.json
+31319b9987738517896dffa8f3537f9673ce676e assets\tutorialmod\models\block\maple_door_top_left_open.json

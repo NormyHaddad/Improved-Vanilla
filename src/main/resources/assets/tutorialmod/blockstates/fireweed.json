@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "tutorialmod:block/fireweed_bottom"
+    },
+    "half=upper": {
+      "model": "tutorialmod:block/fireweed_top"
+    }
+  }
+}

@@ -18,6 +18,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         //blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.GLACIER_LILY, BlockStateModelGenerator.TintType.NOT_TINTED);
+        //blockStateModelGenerator.registerDoor(ModBlocks.MAPLE_DOOR);
     }
 
 

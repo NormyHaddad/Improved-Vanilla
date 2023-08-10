@@ -13,7 +13,7 @@
             "high_chance": 0.33333334,
             "high_states": [
               {
-                "Name": "minecraft:poppy"
+                "Name": "tutorialmod:fireweed"
               },
               {
                 "Name": "minecraft:azure_bluet"
