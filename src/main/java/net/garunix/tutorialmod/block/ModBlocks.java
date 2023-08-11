@@ -16,7 +16,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.Direction;
 
 public class ModBlocks {
     //region Maple Blocks
@@ -50,6 +49,14 @@ public class ModBlocks {
             FabricBlockSettings.copyOf(Blocks.CHERRY_TRAPDOOR).mapColor(MapColor.OFF_WHITE), BlockSetType.CHERRY), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAPLE_DOOR = registerBlock("maple_door", new DoorBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR).mapColor(MapColor.OFF_WHITE), BlockSetType.CHERRY), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAPLE_SIGN = registerBlock("maple_sign", new SignBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAPLE_WALL_SIGN = registerBlock("maple_wall_sign", new WallSignBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAPLE_HANGING_SIGN = registerBlock("maple_hanging_sign", new HangingSignBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAPLE_WALL_HANGING_SIGN = registerBlock("maple_wall_hanging_sign", new WallHangingSignBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY), ItemGroups.BUILDING_BLOCKS);
     //endregion
 
     public static final Block SMOOTH_SMOKY_QUARTZ_BLOCK = registerBlock("smooth_smoky_quartz_block",

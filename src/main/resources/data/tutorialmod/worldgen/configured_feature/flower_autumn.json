@@ -8,18 +8,12 @@
           "to_place": {
             "type": "minecraft:noise_threshold_provider",
             "default_state": {
-              "Name": "minecraft:dandelion"
+              "Name": "minecraft:allium"
             },
             "high_chance": 0.33333334,
             "high_states": [
               {
-                "Name": "tutorialmod:fireweed"
-              },
-              {
                 "Name": "minecraft:azure_bluet"
-              },
-              {
-                "Name": "tutorialmod:glacier_lily"
               }
             ],
             "low_states": [

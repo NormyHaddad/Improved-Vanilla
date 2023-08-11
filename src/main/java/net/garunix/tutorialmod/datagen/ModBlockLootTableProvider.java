@@ -12,6 +12,6 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        //addDrop(MAPLE_DOOR, drops(MAPLE_DOOR.asItem()));
+
     }
 }
