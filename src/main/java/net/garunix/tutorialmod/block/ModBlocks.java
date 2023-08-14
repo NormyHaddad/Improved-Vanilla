@@ -47,13 +47,13 @@ public class ModBlocks {
     public static final Block MAPLE_DOOR = registerBlock("maple_door", new DoorBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR).mapColor(MapColor.OFF_WHITE), BlockSetType.CHERRY), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAPLE_SIGN = registerSign("maple_sign", new SignBlock(
-            FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY));
+            FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.OFF_WHITE), ModWoodType.MAPLE));
     public static final Block MAPLE_WALL_SIGN = registerSign("maple_wall_sign", new WallSignBlock(
-            FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY));
+            FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.OFF_WHITE), ModWoodType.MAPLE));
     public static final Block MAPLE_HANGING_SIGN = registerSign("maple_hanging_sign", new HangingSignBlock(
-            FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY));
+            FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN).mapColor(MapColor.OFF_WHITE), ModWoodType.MAPLE));
     public static final Block MAPLE_WALL_HANGING_SIGN = registerSign("maple_wall_hanging_sign", new WallHangingSignBlock(
-            FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY));
+            FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN).mapColor(MapColor.OFF_WHITE), ModWoodType.MAPLE));
     //endregion
 
     //region Misc
