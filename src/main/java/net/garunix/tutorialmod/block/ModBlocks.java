@@ -8,10 +8,7 @@ import net.garunix.tutorialmod.item.ModItemGroup;
 import net.garunix.tutorialmod.world.tree.MapleSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -49,16 +46,17 @@ public class ModBlocks {
             FabricBlockSettings.copyOf(Blocks.CHERRY_TRAPDOOR).mapColor(MapColor.OFF_WHITE), BlockSetType.CHERRY), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAPLE_DOOR = registerBlock("maple_door", new DoorBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR).mapColor(MapColor.OFF_WHITE), BlockSetType.CHERRY), ItemGroups.BUILDING_BLOCKS);
-    public static final Block MAPLE_SIGN = registerBlock("maple_sign", new SignBlock(
-            FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY), ItemGroups.BUILDING_BLOCKS);
-    public static final Block MAPLE_WALL_SIGN = registerBlock("maple_wall_sign", new WallSignBlock(
-            FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY), ItemGroups.BUILDING_BLOCKS);
-    public static final Block MAPLE_HANGING_SIGN = registerBlock("maple_hanging_sign", new HangingSignBlock(
-            FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY), ItemGroups.BUILDING_BLOCKS);
-    public static final Block MAPLE_WALL_HANGING_SIGN = registerBlock("maple_wall_hanging_sign", new WallHangingSignBlock(
-            FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAPLE_SIGN = registerSign("maple_sign", new SignBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY));
+    public static final Block MAPLE_WALL_SIGN = registerSign("maple_wall_sign", new WallSignBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY));
+    public static final Block MAPLE_HANGING_SIGN = registerSign("maple_hanging_sign", new HangingSignBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY));
+    public static final Block MAPLE_WALL_HANGING_SIGN = registerSign("maple_wall_hanging_sign", new WallHangingSignBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY));
     //endregion
 
+    //region Misc
     public static final Block SMOOTH_SMOKY_QUARTZ_BLOCK = registerBlock("smooth_smoky_quartz_block",
             new GlassBlock(FabricBlockSettings.copyOf(Blocks.QUARTZ_BLOCK).mapColor(MapColor.TERRACOTTA_BROWN).nonOpaque()),
             ItemGroups.NATURAL);
@@ -68,6 +66,7 @@ public class ModBlocks {
     public static final Block ROTTEN_FLESH_BLOCK = registerBlock("rotten_flesh_block",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHER_WART_BLOCK).mapColor(MapColor.TERRACOTTA_RED)),
             ItemGroups.BUILDING_BLOCKS);
+    //endregion
 
     //region Custom Plants
     public static final Block BUNCHBERRY_FLOWER = registerBlock("bunchberry_flower",
@@ -131,6 +130,10 @@ public class ModBlocks {
 
     private static Block registerBlock(String name, Block block, RegistryKey<ItemGroup> group) {
         registerBlockItem(name, block, group);
+        return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
+    }
+
+    private static Block registerSign(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
     }
 
