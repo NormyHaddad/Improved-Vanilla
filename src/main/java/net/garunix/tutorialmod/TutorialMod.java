@@ -4,7 +4,9 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.garunix.tutorialmod.block.ModBlocks;
+import net.garunix.tutorialmod.block.ModFlammableBlockRegistries;
 import net.garunix.tutorialmod.datagen.ModWorldGenerator;
 import net.garunix.tutorialmod.item.ModItemGroup;
 import net.garunix.tutorialmod.item.ModItems;
@@ -41,6 +43,10 @@ public class TutorialMod implements ModInitializer, TerraBlenderApi {
 		ModWorldGeneration.generateModWorldGen();
 
 		StrippableBlockRegistry.register(ModBlocks.MAPLE_LOG, ModBlocks.STRIPPED_MAPLE_LOG);
-		StrippableBlockRegistry.register(ModBlocks.MAPLE_WOOD, ModBlocks.STRIPPED_MAPLE_WOOD);
+		StrippableBlockRegistry.register(ModBlocks.MAPLE_LOG, ModBlocks.STRIPPED_MAPLE_LOG);
+		StrippableBlockRegistry.register(ModBlocks.MAHOE_LOG, ModBlocks.STRIPPED_MAHOE_LOG);
+		StrippableBlockRegistry.register(ModBlocks.MAHOE_WOOD, ModBlocks.STRIPPED_MAHOE_WOOD);
+
+		ModFlammableBlockRegistries.registerFlammableBlocks();
 	}
 }

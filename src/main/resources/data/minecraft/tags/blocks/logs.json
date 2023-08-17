@@ -4,6 +4,10 @@
     "tutorialmod:maple_log",
     "tutorialmod:maple_wood",
     "tutorialmod:stripped_maple_log",
-    "tutorialmod:stripped_maple_wood"
+    "tutorialmod:stripped_maple_wood",
+    "tutorialmod:mahoe_log",
+    "tutorialmod:stripped_mahoe_log",
+    "tutorialmod:mahoe_wood",
+    "tutorialmod:stripped_mahoe_wood"
   ]
 }

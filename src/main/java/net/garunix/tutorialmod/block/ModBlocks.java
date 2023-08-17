@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.garunix.tutorialmod.TutorialMod;
-import net.garunix.tutorialmod.item.ModItemGroup;
+import net.garunix.tutorialmod.world.tree.MahoeSaplingGenerator;
 import net.garunix.tutorialmod.world.tree.MapleSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffects;
@@ -26,7 +26,7 @@ public class ModBlocks {
     public static final Block STRIPPED_MAPLE_WOOD = registerBlock("stripped_maple_wood", new PillarBlock(
             FabricBlockSettings.copyOf(Blocks.STRIPPED_CHERRY_WOOD).mapColor(MapColor.OFF_WHITE)), ItemGroups.BUILDING_BLOCKS);
 
-    //Other
+    //Plank variants
     public static final Block MAPLE_PLANKS = registerBlock("maple_planks", new Block(
             FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS).mapColor(MapColor.OFF_WHITE)), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAPLE_LEAVES = registerBlock("maple_leaves", new LeavesBlock(
@@ -42,18 +42,35 @@ public class ModBlocks {
             FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE).mapColor(MapColor.OFF_WHITE)), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAPLE_FENCE_GATE = registerBlock("maple_fence_gate", new FenceGateBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE_GATE).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY), ItemGroups.BUILDING_BLOCKS);
+
+    //Doors, trapdoors, and signs
     public static final Block MAPLE_TRAPDOOR = registerBlock("maple_trapdoor", new TrapdoorBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_TRAPDOOR).mapColor(MapColor.OFF_WHITE), BlockSetType.CHERRY), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAPLE_DOOR = registerBlock("maple_door", new DoorBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR).mapColor(MapColor.OFF_WHITE), BlockSetType.CHERRY), ItemGroups.BUILDING_BLOCKS);
-    public static final Block MAPLE_SIGN = registerSign("maple_sign", new SignBlock(
+    public static final Block MAPLE_SIGN = registerItemlessBlock("maple_sign", new SignBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.OFF_WHITE), ModWoodType.MAPLE));
-    public static final Block MAPLE_WALL_SIGN = registerSign("maple_wall_sign", new WallSignBlock(
+    public static final Block MAPLE_WALL_SIGN = registerItemlessBlock("maple_wall_sign", new WallSignBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.OFF_WHITE), ModWoodType.MAPLE));
-    public static final Block MAPLE_HANGING_SIGN = registerSign("maple_hanging_sign", new HangingSignBlock(
+    public static final Block MAPLE_HANGING_SIGN = registerItemlessBlock("maple_hanging_sign", new HangingSignBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN).mapColor(MapColor.OFF_WHITE), ModWoodType.MAPLE));
-    public static final Block MAPLE_WALL_HANGING_SIGN = registerSign("maple_wall_hanging_sign", new WallHangingSignBlock(
+    public static final Block MAPLE_WALL_HANGING_SIGN = registerItemlessBlock("maple_wall_hanging_sign", new WallHangingSignBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN).mapColor(MapColor.OFF_WHITE), ModWoodType.MAPLE));
+    //endregion
+
+    //region Mahoe blocks
+    public static final Block MAHOE_LOG = registerBlock("mahoe_log", new PillarBlock(
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_LOG).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)), ItemGroups.NATURAL);
+    public static final Block MAHOE_WOOD = registerBlock("mahoe_wood", new PillarBlock(
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_LOG).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)), ItemGroups.NATURAL);
+    public static final Block STRIPPED_MAHOE_LOG = registerBlock("stripped_mahoe_log", new PillarBlock(
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_LOG).mapColor(MapColor.LIGHT_BLUE_GRAY)), ItemGroups.NATURAL);
+    public static final Block STRIPPED_MAHOE_WOOD = registerBlock("stripped_mahoe_wood", new PillarBlock(
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_LOG).mapColor(MapColor.LIGHT_BLUE_GRAY)), ItemGroups.NATURAL);
+    public static final Block MAHOE_SAPLING = registerBlock("mahoe_sapling", new SaplingBlock(new MahoeSaplingGenerator(),
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_SAPLING).mapColor(MapColor.DARK_GREEN)), ItemGroups.NATURAL);
+    public static final Block MAHOE_LEAVES = registerBlock("mahoe_leaves", new LeavesBlock(
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES).mapColor(MapColor.EMERALD_GREEN).nonOpaque()), ItemGroups.NATURAL);
     //endregion
 
     //region Misc
@@ -133,7 +150,7 @@ public class ModBlocks {
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
     }
 
-    private static Block registerSign(String name, Block block) {
+    private static Block registerItemlessBlock(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
     }
 
@@ -147,7 +164,6 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        //TutorialMod.LOGGER.info("Registering blocks for " + TutorialMod.MOD_ID);
 
     }
 }

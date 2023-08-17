@@ -8,7 +8,6 @@ import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.biome.OverworldBiomeCreator;
 
 public class ModWorldGeneration {
-
     public static void generateModWorldGen() {
         ModTreeGeneration.generateTrees();
     }

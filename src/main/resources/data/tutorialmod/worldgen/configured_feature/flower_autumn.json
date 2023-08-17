@@ -14,11 +14,20 @@
             "high_states": [
               {
                 "Name": "minecraft:azure_bluet"
+              },
+              {
+                "Name": "tutorialmod:fireweed"
+              },
+              {
+                "Name": "tutorialmod:glacier_lily"
               }
             ],
             "low_states": [
               {
                 "Name": "tutorialmod:glacier_lily"
+              },
+              {
+                "Name": "tutorialmod:bunchberry_flower"
               }
             ],
             "noise": {
@@ -29,7 +38,7 @@
             },
             "scale": 0.005,
             "seed": 2534,
-            "threshold": -0.8
+            "threshold": -0.4
           }
         }
       },

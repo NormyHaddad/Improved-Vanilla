@@ -20,6 +20,7 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> MAPLE_PLACED_KEY = registerKey("maple_placed");
     public static final RegistryKey<PlacedFeature> MEGA_MAPLE_PLACED_KEY = registerKey("mega_maple_placed");
+    public static final RegistryKey<PlacedFeature> MAHOE_PLACED_KEY = registerKey("mahoe_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);

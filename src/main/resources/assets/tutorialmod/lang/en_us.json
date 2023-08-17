@@ -30,9 +30,12 @@
   "block.tutorialmod.maple_fence": "Maple Fence",
   "block.tutorialmod.maple_fence_gate": "Maple Fence Gate",
   "block.tutorialmod.maple_trapdoor": "Maple Trapdoor",
+  "block.tutorialmod.maple_sign": "Maple Sign",
+  "block.tutorialmod.maple_hanging_sign": "Maple Hanging Sign",
   "block.tutorialmod.glacier_lily": "Glacier Lily",
   "block.tutorialmod.fireweed": "Fireweed",
-  "block.tutorialmod.maple_door": "maple door",
+  "block.tutorialmod.bunchberry_flower": "Bunchberry",
+  "block.tutorialmod.maple_door": "Maple door",
 
   "biome.tutorialmod.autumn_forest": "Autumn Forest",
   "itemgroup.garunix": "Garunix's Items"
