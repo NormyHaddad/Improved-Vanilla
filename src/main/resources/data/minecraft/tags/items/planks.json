@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:maple_planks"
+    "tutorialmod:maple_planks",
+    "tutorialmod:mahoe_planks"
   ]
 }

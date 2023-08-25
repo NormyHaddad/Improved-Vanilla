@@ -12,5 +12,7 @@ import net.minecraft.util.Identifier;
 public class ModBlockSetType {
     public static final BlockSetType MAPLE = BlockSetTypeBuilder.copyOf(BlockSetType.CHERRY).register(
             new Identifier(TutorialMod.MOD_ID, "maple"));
+    public static final BlockSetType MAHOE = BlockSetTypeBuilder.copyOf(BlockSetType.JUNGLE).register(
+            new Identifier(TutorialMod.MOD_ID, "mahoe"));
     public void init() {}
 }

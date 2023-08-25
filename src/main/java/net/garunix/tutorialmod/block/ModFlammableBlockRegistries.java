@@ -24,6 +24,7 @@ public class ModFlammableBlockRegistries {
         registry.add(ModBlocks.MAHOE_WOOD, 5, 5);
         registry.add(ModBlocks.STRIPPED_MAHOE_WOOD, 5, 5);
         registry.add(ModBlocks.MAHOE_LEAVES, 30, 60);
+        registry.add(ModBlocks.MAHOE_PLANKS, 5, 20);
         //endregion
         //region Glowing wool
         registry.add(ModBlocks.GLOW_BLUE_WOOL, 30, 60);

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:maple_door"
+    "tutorialmod:maple_door",
+    "tutorialmod:mahoe_door"
   ]
 }

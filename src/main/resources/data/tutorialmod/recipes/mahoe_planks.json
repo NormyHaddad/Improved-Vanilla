@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "tutorialmod:mahoe_logs"
+    }
+  ],
+  "result": {
+    "item": "tutorialmod:mahoe_planks",
+    "count": 4
+  }
+}

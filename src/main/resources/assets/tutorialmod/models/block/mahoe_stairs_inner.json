@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "tutorialmod:block/mahoe_planks",
+    "side": "tutorialmod:block/mahoe_planks",
+    "top": "tutorialmod:block/mahoe_planks"
+  }
+}

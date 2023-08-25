@@ -4,6 +4,11 @@
     "tutorialmod:maple_planks",
     "tutorialmod:maple_slab",
     "tutorialmod:maple_stairs",
-    "tutorialmod:maple_trapdoor"
+    "tutorialmod:maple_trapdoor",
+    "tutorialmod:mahoe_planks",
+    "tutorialmod:mahoe_slab",
+    "tutorialmod:mahoe_stairs",
+    "tutorialmod:maple_trapdoor",
+    "tutorialmod:mahoe_trapdoor"
   ]
 }

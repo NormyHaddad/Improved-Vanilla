@@ -1,6 +1,7 @@
 {
   "item.tutorialmod.test_item": "Test Item",
   "item.tutorialmod.smoky_quartz": "Smoky_Quartz",
+
   "block.tutorialmod.glow_blue_wool": "Glowing Blue Wool",
   "block.tutorialmod.glow_brown_wool": "Glowing Brown Wool",
   "block.tutorialmod.glow_cyan_wool": "Glowing Cyan Wool",
@@ -16,9 +17,11 @@
   "block.tutorialmod.glow_red_wool": "Glowing Red Wool",
   "block.tutorialmod.glow_white_wool": "Glowing White Wool",
   "block.tutorialmod.glow_yellow_wool": "Glowing Yellow Wool",
+
   "block.tutorialmod.rotten_flesh_block": "Block of Rotten Flesh",
   "block.tutorialmod.smoky_quartz_block": "Smoky Quartz Block",
   "block.tutorialmod.smooth_smoky_quartz_block": "Smooth Smoky Quartz Block",
+
   "block.tutorialmod.maple_log": "Maple Log",
   "block.tutorialmod.stripped_maple_log": "Stripped Maple Log",
   "block.tutorialmod.maple_wood": "Maple Wood",
@@ -27,15 +30,30 @@
   "block.tutorialmod.maple_leaves": "Maple Leaves",
   "block.tutorialmod.maple_sapling": "Maple Sapling",
   "block.tutorialmod.maple_slab": "Maple Slab",
+  "block.tutorialmod.maple_stairs": "Maple Stairs",
   "block.tutorialmod.maple_fence": "Maple Fence",
   "block.tutorialmod.maple_fence_gate": "Maple Fence Gate",
+  "block.tutorialmod.maple_door": "Maple door",
   "block.tutorialmod.maple_trapdoor": "Maple Trapdoor",
   "block.tutorialmod.maple_sign": "Maple Sign",
   "block.tutorialmod.maple_hanging_sign": "Maple Hanging Sign",
+
   "block.tutorialmod.glacier_lily": "Glacier Lily",
   "block.tutorialmod.fireweed": "Fireweed",
   "block.tutorialmod.bunchberry_flower": "Bunchberry",
-  "block.tutorialmod.maple_door": "Maple door",
+
+  "block.tutorialmod.mahoe_log": "Mahoe Log",
+  "block.tutorialmod.stripped_mahoe_log": "Stripped Mahoe Log",
+  "block.tutorialmod.mahoe_wood": "Mahoe Wood",
+  "block.tutorialmod.stripped_mahoe_wood": "Stripped Mahoe Wood",
+  "block.tutorialmod.mahoe_planks": "Mahoe Planks",
+  "block.tutorialmod.mahoe_leaves": "Mahoe Leaves",
+  "block.tutorialmod.mahoe_sapling": "Mahoe Sapling",
+  "block.tutorialmod.mahoe_slab": "Mahoe Slab",
+  "block.tutorialmod.mahoe_stairs": "Mahoe Stairs",
+  "block.tutorialmod.mahoe_fence": "Mahoe Fence",
+  "block.tutorialmod.mahoe_fence_gate": "Mahoe Fence Gate",
+  "block.tutorialmod.mahoe_trapdoor": "Mahoe Trapdoor",
 
   "biome.tutorialmod.autumn_forest": "Autumn Forest",
   "itemgroup.garunix": "Garunix's Items"

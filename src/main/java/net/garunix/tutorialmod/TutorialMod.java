@@ -2,6 +2,10 @@ package net.garunix.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.biome.v1.BiomeModificationContext;
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.fabricmc.fabric.api.biome.v1.ModificationPhase;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -16,10 +20,21 @@ import net.garunix.tutorialmod.world.gen.trunk.ModTrunkPlacerType;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.sound.BiomeAdditionsSound;
+import net.minecraft.sound.BiomeMoodSound;
+import net.minecraft.sound.MusicSound;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.biome.BiomeEffects;
+import net.minecraft.world.biome.BiomeKeys;
+import net.minecraft.world.biome.BiomeParticleConfig;
+import org.jetbrains.annotations.NotNull;
 import terrablender.api.Regions;
 import terrablender.api.RegionType;
 import terrablender.api.TerraBlenderApi;
+
+import java.util.Optional;
 
 public class TutorialMod implements ModInitializer, TerraBlenderApi {
 	public static final String MOD_ID = "tutorialmod";
@@ -40,7 +55,19 @@ public class TutorialMod implements ModInitializer, TerraBlenderApi {
 		ModItems.assignItemGroups();
 
 		ModTrunkPlacerType.init();
+		ModWorldGeneration.init();
 		ModWorldGeneration.generateModWorldGen();
+
+		var savannaModifier = BiomeModifications.create(new Identifier(TutorialMod.MOD_ID, "savanna_modifier"));
+		var ctx = BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_SAVANNA);
+		savannaModifier.add(ModificationPhase.REPLACEMENTS, ctx, (bsCtx, bmCtx) -> { bmCtx.getEffects().setFoliageColor(3648000); });
+		savannaModifier.add(ModificationPhase.REPLACEMENTS, ctx, (bsCtx, bmCtx) -> { bmCtx.getEffects().setGrassColor(3849472); });
+
+		var cherryModifier = BiomeModifications.create(new Identifier(TutorialMod.MOD_ID, "cherry_modifier"));
+		ctx = BiomeSelectors.includeByKey(BiomeKeys.CHERRY_GROVE);
+		cherryModifier.add(ModificationPhase.REPLACEMENTS, ctx, (bsCtx, bmCtx) -> { bmCtx.getEffects().setGrassColor(13427148); });
+		cherryModifier.add(ModificationPhase.REPLACEMENTS, ctx, (bsCtx, bmCtx) -> { bmCtx.getEffects().setFoliageColor(11522223); });
+
 
 		StrippableBlockRegistry.register(ModBlocks.MAPLE_LOG, ModBlocks.STRIPPED_MAPLE_LOG);
 		StrippableBlockRegistry.register(ModBlocks.MAPLE_LOG, ModBlocks.STRIPPED_MAPLE_LOG);

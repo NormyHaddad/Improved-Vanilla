@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:maple_fence_gate"
+    "tutorialmod:maple_fence_gate",
+    "tutorialmod:mahoe_fence_gate"
   ]
 }

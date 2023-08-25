@@ -26,7 +26,7 @@ public class ModBlocks {
     public static final Block STRIPPED_MAPLE_WOOD = registerBlock("stripped_maple_wood", new PillarBlock(
             FabricBlockSettings.copyOf(Blocks.STRIPPED_CHERRY_WOOD).mapColor(MapColor.OFF_WHITE)), ItemGroups.BUILDING_BLOCKS);
 
-    //Plank variants
+    //Plank variants & leaf/sapling
     public static final Block MAPLE_PLANKS = registerBlock("maple_planks", new Block(
             FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS).mapColor(MapColor.OFF_WHITE)), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAPLE_LEAVES = registerBlock("maple_leaves", new LeavesBlock(
@@ -43,7 +43,7 @@ public class ModBlocks {
     public static final Block MAPLE_FENCE_GATE = registerBlock("maple_fence_gate", new FenceGateBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE_GATE).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY), ItemGroups.BUILDING_BLOCKS);
 
-    //Doors, trapdoors, and signs
+    //Other
     public static final Block MAPLE_TRAPDOOR = registerBlock("maple_trapdoor", new TrapdoorBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_TRAPDOOR).mapColor(MapColor.OFF_WHITE), BlockSetType.CHERRY), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAPLE_DOOR = registerBlock("maple_door", new DoorBlock(
@@ -56,9 +56,16 @@ public class ModBlocks {
             FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN).mapColor(MapColor.OFF_WHITE), ModWoodType.MAPLE));
     public static final Block MAPLE_WALL_HANGING_SIGN = registerItemlessBlock("maple_wall_hanging_sign", new WallHangingSignBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN).mapColor(MapColor.OFF_WHITE), ModWoodType.MAPLE));
+    public static final Block MAPLE_PRESSURE_PLATE = registerBlock("maple_pressure_plate", new PressurePlateBlock(
+            PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.CHERRY_PRESSURE_PLATE).mapColor(MapColor.OFF_WHITE),
+            ModBlockSetType.MAPLE), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAPLE_BUTTON = registerBlock("maple_button", new ButtonBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_BUTTON).mapColor(MapColor.OFF_WHITE),
+            ModBlockSetType.MAPLE, 30, true), ItemGroups.BUILDING_BLOCKS);
     //endregion
 
     //region Mahoe blocks
+    //Logs/wood
     public static final Block MAHOE_LOG = registerBlock("mahoe_log", new PillarBlock(
             FabricBlockSettings.copyOf(Blocks.JUNGLE_LOG).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)), ItemGroups.NATURAL);
     public static final Block MAHOE_WOOD = registerBlock("mahoe_wood", new PillarBlock(
@@ -67,10 +74,42 @@ public class ModBlocks {
             FabricBlockSettings.copyOf(Blocks.JUNGLE_LOG).mapColor(MapColor.LIGHT_BLUE_GRAY)), ItemGroups.NATURAL);
     public static final Block STRIPPED_MAHOE_WOOD = registerBlock("stripped_mahoe_wood", new PillarBlock(
             FabricBlockSettings.copyOf(Blocks.JUNGLE_LOG).mapColor(MapColor.LIGHT_BLUE_GRAY)), ItemGroups.NATURAL);
+
+    //Planks and variants & leaf/sapling
+    public static final Block MAHOE_PLANKS = registerBlock("mahoe_planks", new Block(
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_PLANKS).mapColor(MapColor.LIGHT_BLUE_GRAY)), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAHOE_SAPLING = registerBlock("mahoe_sapling", new SaplingBlock(new MahoeSaplingGenerator(),
             FabricBlockSettings.copyOf(Blocks.JUNGLE_SAPLING).mapColor(MapColor.DARK_GREEN)), ItemGroups.NATURAL);
     public static final Block MAHOE_LEAVES = registerBlock("mahoe_leaves", new LeavesBlock(
             FabricBlockSettings.copyOf(Blocks.JUNGLE_LEAVES).mapColor(MapColor.EMERALD_GREEN).nonOpaque()), ItemGroups.NATURAL);
+    public static final Block MAHOE_SLAB = registerBlock("mahoe_slab", new SlabBlock(
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_SLAB).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAHOE_STAIRS = registerBlock("mahoe_stairs", new StairsBlock(
+            ModBlocks.MAHOE_PLANKS.getDefaultState(),
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_STAIRS).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAHOE_FENCE = registerBlock("mahoe_fence", new FenceBlock(
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_FENCE).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAHOE_FENCE_GATE = registerBlock("mahoe_fence_gate", new FenceGateBlock(
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_FENCE_GATE).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE), ModWoodType.MAHOE), ItemGroups.BUILDING_BLOCKS);
+    //Other
+    public static final Block MAHOE_DOOR = registerBlock("mahoe_door", new DoorBlock(
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_DOOR).mapColor(MapColor.LIGHT_BLUE_GRAY), ModBlockSetType.MAHOE), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAHOE_TRAPDOOR = registerBlock("mahoe_trapdoor", new TrapdoorBlock(
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_TRAPDOOR).mapColor(MapColor.LIGHT_BLUE_GRAY), ModBlockSetType.MAHOE), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAHOE_PRESSURE_PLATE = registerBlock("mahoe_pressure_plate", new PressurePlateBlock(
+            PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.JUNGLE_PRESSURE_PLATE).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE),
+            ModBlockSetType.MAHOE), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAHOE_BUTTON = registerBlock("mahoe_button", new ButtonBlock(
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_BUTTON).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE),
+            ModBlockSetType.MAHOE, 30, true), ItemGroups.BUILDING_BLOCKS);
+    public static final Block MAHOE_SIGN = registerItemlessBlock("mahoe_sign", new SignBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.LIGHT_BLUE_GRAY), ModWoodType.MAHOE));
+    public static final Block MAHOE_WALL_SIGN = registerItemlessBlock("mahoe_wall_sign", new WallSignBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.LIGHT_BLUE_GRAY), ModWoodType.MAHOE));
+    public static final Block MAHOE_HANGING_SIGN = registerItemlessBlock("mahoe_hanging_sign", new HangingSignBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE), ModWoodType.MAHOE));
+    public static final Block MAHOE_WALL_HANGING_SIGN = registerItemlessBlock("mahoe_wall_hanging_sign", new WallHangingSignBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE), ModWoodType.MAHOE));
     //endregion
 
     //region Misc
@@ -163,7 +202,37 @@ public class ModBlocks {
         return item;
     }
 
-    public static void registerModBlocks() {
-
+    public static void orderItems() {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {
+            content.addAfter(Items.CHERRY_BUTTON, MAHOE_BUTTON);
+            content.addAfter(Items.CHERRY_BUTTON, MAHOE_PRESSURE_PLATE);
+            content.addAfter(Items.CHERRY_BUTTON, MAHOE_TRAPDOOR);
+            content.addAfter(Items.CHERRY_BUTTON, MAHOE_DOOR);
+            content.addAfter(Items.CHERRY_BUTTON, MAHOE_FENCE_GATE);
+            content.addAfter(Items.CHERRY_BUTTON, MAHOE_FENCE);
+            content.addAfter(Items.CHERRY_BUTTON, MAHOE_SLAB);
+            content.addAfter(Items.CHERRY_BUTTON, MAHOE_STAIRS);
+            content.addAfter(Items.CHERRY_BUTTON, MAHOE_PLANKS);
+            content.addAfter(Items.CHERRY_BUTTON, STRIPPED_MAHOE_WOOD);
+            content.addAfter(Items.CHERRY_BUTTON, STRIPPED_MAHOE_LOG);
+            content.addAfter(Items.CHERRY_BUTTON, MAHOE_WOOD);
+            content.addAfter(Items.CHERRY_BUTTON, MAHOE_LOG);
+            
+            content.addAfter(Items.CHERRY_BUTTON, MAPLE_BUTTON);
+            content.addAfter(Items.CHERRY_BUTTON, MAPLE_PRESSURE_PLATE);
+            content.addAfter(Items.CHERRY_BUTTON, MAPLE_TRAPDOOR);
+            content.addAfter(Items.CHERRY_BUTTON, MAPLE_DOOR);
+            content.addAfter(Items.CHERRY_BUTTON, MAPLE_FENCE_GATE);
+            content.addAfter(Items.CHERRY_BUTTON, MAPLE_FENCE);
+            content.addAfter(Items.CHERRY_BUTTON, MAPLE_SLAB);
+            content.addAfter(Items.CHERRY_BUTTON, MAPLE_STAIRS);
+            content.addAfter(Items.CHERRY_BUTTON, MAPLE_PLANKS);
+            content.addAfter(Items.CHERRY_BUTTON, STRIPPED_MAPLE_WOOD);
+            content.addAfter(Items.CHERRY_BUTTON, STRIPPED_MAPLE_LOG);
+            content.addAfter(Items.CHERRY_BUTTON, MAPLE_WOOD);
+            content.addAfter(Items.CHERRY_BUTTON, MAPLE_LOG);
+        });
     }
+
+    public static void registerModBlocks() { orderItems(); }
 }

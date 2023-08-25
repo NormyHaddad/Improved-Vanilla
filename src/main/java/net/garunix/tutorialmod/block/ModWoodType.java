@@ -12,6 +12,8 @@ import java.util.Set;
 public class ModWoodType {
     public static final WoodType MAPLE = WoodTypeBuilder.copyOf(WoodType.CHERRY).register(
             new Identifier(TutorialMod.MOD_ID, "maple"), ModBlockSetType.MAPLE);
+    public static final WoodType MAHOE = WoodTypeBuilder.copyOf(WoodType.JUNGLE).register(
+            new Identifier(TutorialMod.MOD_ID, "mahoe"), ModBlockSetType.MAHOE);
 
     //public static final Set<WoodType> VALUES = new ObjectArraySet<WoodType>();
     //public static final WoodType MAPLE = register(new WoodType("acacia", BlockSetType.ACACIA));

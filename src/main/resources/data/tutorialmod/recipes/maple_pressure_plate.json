@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:maple_planks"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:maple_pressure_plate",
+    "count": 1
+  }
+}
