@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.garunix.tutorialmod.TutorialMod;
 import net.garunix.tutorialmod.block.ModBlocks;
+import net.garunix.tutorialmod.entity.ModEntities;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -22,7 +23,8 @@ public class ModItems {
             new SignItem(new Item.Settings().maxCount(16), ModBlocks.MAHOE_SIGN, ModBlocks.MAHOE_WALL_SIGN));
     public static final Item MAHOE_HANGING_SIGN = registerItem("mahoe_hanging_sign",
             new HangingSignItem(ModBlocks.MAHOE_HANGING_SIGN, ModBlocks.MAHOE_WALL_HANGING_SIGN, new Item.Settings().maxCount(16)));
-
+    public static final Item RED_CARDINAL_SPAWN_EGG = registerItem("red_cardinal_spawn_egg",
+            new SpawnEggItem(ModEntities.RED_CARDINAL, 0xE30000, 0x262020, new FabricItemSettings()));
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
     }

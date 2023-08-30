@@ -6,12 +6,15 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModificationContext;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.biome.v1.ModificationPhase;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.garunix.tutorialmod.block.ModBlocks;
 import net.garunix.tutorialmod.block.ModFlammableBlockRegistries;
 import net.garunix.tutorialmod.datagen.ModWorldGenerator;
+import net.garunix.tutorialmod.entity.ModEntities;
+import net.garunix.tutorialmod.entity.custom.RedCardinalEntity;
 import net.garunix.tutorialmod.item.ModItemGroup;
 import net.garunix.tutorialmod.item.ModItems;
 import net.garunix.tutorialmod.world.biome.ModRegion1;
@@ -75,5 +78,7 @@ public class TutorialMod implements ModInitializer, TerraBlenderApi {
 		StrippableBlockRegistry.register(ModBlocks.MAHOE_WOOD, ModBlocks.STRIPPED_MAHOE_WOOD);
 
 		ModFlammableBlockRegistries.registerFlammableBlocks();
+
+		FabricDefaultAttributeRegistry.register(ModEntities.RED_CARDINAL, RedCardinalEntity.setAttributes());
 	}
 }
