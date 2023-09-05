@@ -2,20 +2,17 @@ package net.garunix.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.biome.v1.BiomeModificationContext;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.biome.v1.ModificationPhase;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
-import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.garunix.tutorialmod.block.ModBlocks;
 import net.garunix.tutorialmod.block.ModFlammableBlockRegistries;
-import net.garunix.tutorialmod.datagen.ModWorldGenerator;
 import net.garunix.tutorialmod.entity.ModEntities;
 import net.garunix.tutorialmod.entity.custom.RedCardinalEntity;
-import net.garunix.tutorialmod.item.ModItemGroup;
+//import net.garunix.tutorialmod.entity.custom.RedCardinalEntityOld;
 import net.garunix.tutorialmod.item.ModItems;
 import net.garunix.tutorialmod.world.biome.ModRegion1;
 import net.garunix.tutorialmod.world.gen.ModWorldGeneration;
@@ -23,21 +20,11 @@ import net.garunix.tutorialmod.world.gen.trunk.ModTrunkPlacerType;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.sound.BiomeAdditionsSound;
-import net.minecraft.sound.BiomeMoodSound;
-import net.minecraft.sound.MusicSound;
-import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.biome.BiomeEffects;
 import net.minecraft.world.biome.BiomeKeys;
-import net.minecraft.world.biome.BiomeParticleConfig;
-import org.jetbrains.annotations.NotNull;
 import terrablender.api.Regions;
 import terrablender.api.RegionType;
 import terrablender.api.TerraBlenderApi;
-
-import java.util.Optional;
 
 public class TutorialMod implements ModInitializer, TerraBlenderApi {
 	public static final String MOD_ID = "tutorialmod";

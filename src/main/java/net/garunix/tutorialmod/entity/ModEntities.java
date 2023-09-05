@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModEntities {
     public static final EntityType<RedCardinalEntity> RED_CARDINAL = Registry.register(
-            Registries.ENTITY_TYPE, new Identifier(TutorialMod.MOD_ID, "tiger"),
+            Registries.ENTITY_TYPE, new Identifier(TutorialMod.MOD_ID, "red_cardinal"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, RedCardinalEntity::new)
-                    .dimensions(EntityDimensions.fixed(1.5f, 1.75f)).build());
+                    .dimensions(EntityDimensions.fixed(0.4f, 0.4f)).build());
 }
