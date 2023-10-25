@@ -14,9 +14,5 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         // use addDrop()
-        addDrop(MAPLE_BUTTON, drops(MAPLE_BUTTON.asItem()));
-        addDrop(MAPLE_PRESSURE_PLATE, drops(MAPLE_PRESSURE_PLATE.asItem()));
-        addDrop(MAHOE_BUTTON, drops(MAHOE_BUTTON.asItem()));
-        addDrop(MAHOE_PRESSURE_PLATE, drops(MAHOE_PRESSURE_PLATE.asItem()));
     }
 }

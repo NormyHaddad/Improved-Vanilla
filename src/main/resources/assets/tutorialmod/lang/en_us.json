@@ -55,6 +55,14 @@
   "block.tutorialmod.mahoe_fence_gate": "Mahoe Fence Gate",
   "block.tutorialmod.mahoe_trapdoor": "Mahoe Trapdoor",
 
+  "block.tutorialmod.calcite_bricks":  "Calcite Bricks",
+  "block.tutorialmod.mossy_calcite_bricks":  "Mossy Calcite Bricks",
+  "block.tutorialmod.cracked_calcite_bricks": "Cracked Calcite Bricks",
+  "block.tutorialmod.mossy_cracked_calcite_bricks": "Mossy Cracked Calcite Bricks",
+  "block.tutorialmod.mossy_deepslate_bricks": "Mossy Deepslate Bricks",
+  "block.tutorialmod.mossy_cracked_deepslate_bricks": "Mossy Cracked Deepslate Bricks",
+  "block.tutorialmod.mossy_cracked_stone_bricks": "Mossy Cracked Stone Bricks",
+
   "biome.tutorialmod.autumn_forest": "Autumn Forest",
   "itemgroup.garunix": "Garunix's Items"
 }

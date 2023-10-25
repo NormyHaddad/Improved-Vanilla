@@ -16,7 +16,7 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     //region Maple Blocks
-    // Log/wood blocks
+    //region Log/wood blocks
     public static final Block MAPLE_LOG = registerBlock("maple_log", new PillarBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_LOG).mapColor(MapColor.TERRACOTTA_BROWN)), ItemGroups.NATURAL);
     public static final Block MAPLE_WOOD = registerBlock("maple_wood", new PillarBlock(
@@ -25,8 +25,9 @@ public class ModBlocks {
             FabricBlockSettings.copyOf(Blocks.STRIPPED_CHERRY_LOG).mapColor(MapColor.ORANGE)), ItemGroups.BUILDING_BLOCKS);
     public static final Block STRIPPED_MAPLE_WOOD = registerBlock("stripped_maple_wood", new PillarBlock(
             FabricBlockSettings.copyOf(Blocks.STRIPPED_CHERRY_WOOD).mapColor(MapColor.OFF_WHITE)), ItemGroups.BUILDING_BLOCKS);
+    //endregion
 
-    //Plank variants & leaf/sapling
+    //region Plank variants & leaf/sapling
     public static final Block MAPLE_PLANKS = registerBlock("maple_planks", new Block(
             FabricBlockSettings.copyOf(Blocks.CHERRY_PLANKS).mapColor(MapColor.OFF_WHITE)), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAPLE_LEAVES = registerBlock("maple_leaves", new LeavesBlock(
@@ -42,6 +43,7 @@ public class ModBlocks {
             FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE).mapColor(MapColor.OFF_WHITE)), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAPLE_FENCE_GATE = registerBlock("maple_fence_gate", new FenceGateBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_FENCE_GATE).mapColor(MapColor.OFF_WHITE), WoodType.CHERRY), ItemGroups.BUILDING_BLOCKS);
+    //endregion
 
     //Other
     public static final Block MAPLE_TRAPDOOR = registerBlock("maple_trapdoor", new TrapdoorBlock(
@@ -121,6 +123,30 @@ public class ModBlocks {
             ItemGroups.NATURAL);
     public static final Block ROTTEN_FLESH_BLOCK = registerBlock("rotten_flesh_block",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHER_WART_BLOCK).mapColor(MapColor.TERRACOTTA_RED)),
+            ItemGroups.BUILDING_BLOCKS);
+    //endregion
+
+    //region Stone
+    public static final Block CALCITE_BRICKS = registerBlock("calcite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).mapColor(MapColor.WHITE)),
+            ItemGroups.BUILDING_BLOCKS);
+    public static final Block CRACKED_CALCITE_BRICKS = registerBlock("cracked_calcite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).mapColor(MapColor.WHITE)),
+            ItemGroups.BUILDING_BLOCKS);
+    public static final Block MOSSY_CALCITE_BRICKS = registerBlock("mossy_calcite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).mapColor(MapColor.WHITE)),
+            ItemGroups.BUILDING_BLOCKS);
+    public static final Block MOSSY_CRACKED_CALCITE_BRICKS = registerBlock("mossy_cracked_calcite_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).mapColor(MapColor.WHITE)),
+            ItemGroups.BUILDING_BLOCKS);
+    public static final Block MOSSY_CRACKED_STONE_BRICKS = registerBlock("mossy_cracked_stone_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).mapColor(MapColor.STONE_GRAY)),
+            ItemGroups.BUILDING_BLOCKS);
+    public static final Block MOSSY_DEEPSLATE_BRICKS = registerBlock("mossy_deepslate_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_BRICKS).mapColor(MapColor.DEEPSLATE_GRAY)),
+            ItemGroups.BUILDING_BLOCKS);
+    public static final Block MOSSY_CRACKED_DEEPSLATE_BRICKS = registerBlock("mossy_cracked_deepslate_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_BRICKS).mapColor(MapColor.DEEPSLATE_GRAY)),
             ItemGroups.BUILDING_BLOCKS);
     //endregion
 
