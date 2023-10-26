@@ -3,11 +3,13 @@ package net.garunix.tutorialmod;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.garunix.tutorialmod.block.ModBlocks;
 import net.garunix.tutorialmod.entity.ModEntities;
 import net.garunix.tutorialmod.entity.RedCardinalRenderer;
 import net.garunix.tutorialmod.particles.Firefly;
+import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.render.RenderLayer;
 
 public class TutorialModClient implements ClientModInitializer {
@@ -26,6 +28,15 @@ public class TutorialModClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAHOE_SAPLING, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAHOE_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAHOE_TRAPDOOR, RenderLayer.getCutout());
+
+		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> {
+			if (world == null || pos == null) {
+				return -1;
+			}
+			return BiomeColors.getFoliageColor(world, pos);
+		}, ModBlocks.MAHOE_LEAVES);
+
+		//ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> 0x3495eb, ModBlocks.MAHOE_LEAVES);
 
 		ParticleFactoryRegistry.getInstance().register(TutorialMod.FIREFLY, Firefly.Factory::new);
 
