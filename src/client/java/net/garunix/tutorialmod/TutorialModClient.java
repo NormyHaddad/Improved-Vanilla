@@ -28,13 +28,13 @@ public class TutorialModClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAHOE_SAPLING, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAHOE_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAHOE_TRAPDOOR, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOSSY_CALCITE_BRICKS, RenderLayer.getCutout());
 
 		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> {
-			if (world == null || pos == null) {
-				return -1;
-			}
-			return BiomeColors.getFoliageColor(world, pos);
-		}, ModBlocks.MAHOE_LEAVES);
+			if (world == null || pos == null) { return -1; }
+			return BiomeColors.getFoliageColor(world, pos); },
+				ModBlocks.MAHOE_LEAVES,
+				ModBlocks.MOSSY_CALCITE_BRICKS);
 
 		//ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> 0x3495eb, ModBlocks.MAHOE_LEAVES);
 

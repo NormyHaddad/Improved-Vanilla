@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.garunix.tutorialmod.TutorialMod;
 import net.garunix.tutorialmod.world.tree.MahoeSaplingGenerator;
 import net.garunix.tutorialmod.world.tree.MapleSaplingGenerator;
+import net.garunix.tutorialmod.world.tree.StrangeSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
@@ -124,6 +125,8 @@ public class ModBlocks {
     public static final Block ROTTEN_FLESH_BLOCK = registerBlock("rotten_flesh_block",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHER_WART_BLOCK).mapColor(MapColor.TERRACOTTA_RED)),
             ItemGroups.BUILDING_BLOCKS);
+    public static final Block STRANGE_SAPLING = registerBlock("strange_sapling", new SaplingBlock(new StrangeSaplingGenerator(),
+            FabricBlockSettings.copyOf(Blocks.JUNGLE_SAPLING).mapColor(MapColor.PALE_PURPLE)), ItemGroups.NATURAL);
     //endregion
 
     //region Stone

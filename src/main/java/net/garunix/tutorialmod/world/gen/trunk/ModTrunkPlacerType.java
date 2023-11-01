@@ -16,9 +16,10 @@ public class ModTrunkPlacerType  extends TrunkPlacerType{
         super(codec);
     }
 
-
     public static final TrunkPlacerType<GiantMapleTrunkPlacer> GIANT_MAPLE_TRUNK_PLACER = ModTrunkPlacerType.register(
             new Identifier(TutorialMod.MOD_ID, "giant_maple_trunk_placer"), GiantMapleTrunkPlacer.CODEC);
+    public static final TrunkPlacerType<StrangeTrunkPlacer> STRANGE_TRUNK_PLACER = ModTrunkPlacerType.register(
+            new Identifier(TutorialMod.MOD_ID, "strange_trunk_placer"), StrangeTrunkPlacer.CODEC);
 
     private static <P extends TrunkPlacer> TrunkPlacerType<P> register(Identifier id, Codec<P> codec) {
         return Registry.register(Registries.TRUNK_PLACER_TYPE, id, new TrunkPlacerType<P>(codec));

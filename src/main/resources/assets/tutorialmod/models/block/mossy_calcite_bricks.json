@@ -1,6 +1,33 @@
 {
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "tutorialmod:block/mossy_calcite_bricks"
-  }
+  "parent":"block/cube_all",
+  "textures":{
+    "stone":"tutorialmod:block/calcite_bricks",
+    "moss": "tutorialmod:block/overlay/moss_overlay"
+  },
+  "elements":[
+    {
+      "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#stone", "cullface": "down"},
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#stone",    "cullface": "up"},
+        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#stone",   "cullface": "north"},
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#stone",   "cullface": "south"},
+        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#stone",   "cullface": "west"},
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#stone",   "cullface": "east"}
+      }
+    },
+    {
+      "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#moss", "cullface": "down", "tintindex": 0 },
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#moss",    "cullface": "up", "tintindex": 0 },
+        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#moss",   "cullface": "north", "tintindex": 0 },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#moss",   "cullface": "south", "tintindex": 0 },
+        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#moss",   "cullface": "west", "tintindex": 0 },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#moss",   "cullface": "east", "tintindex": 0 }
+      }
+    }
+  ]
 }

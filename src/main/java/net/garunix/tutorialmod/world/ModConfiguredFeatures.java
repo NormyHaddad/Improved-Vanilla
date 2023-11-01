@@ -22,6 +22,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> MAPLE_KEY = registerKey("maple");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MEGA_MAPLE_KEY = registerKey("mega_maple");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MAHOE_KEY = registerKey("mahoe");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> STRANGE_KEY = registerKey("strange");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
