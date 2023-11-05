@@ -31,8 +31,8 @@
     "minimum_size": {
       "type": "minecraft:two_layers_feature_size",
       "limit": 1,
-      "lower_size": 1,
-      "upper_size": 3
+      "lower_size": 3,
+      "upper_size": 11
     },
     "trunk_placer": {
       "type": "tutorialmod:strange_trunk_placer",

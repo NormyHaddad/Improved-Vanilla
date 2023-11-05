@@ -1,6 +1,8 @@
 {
   "item.tutorialmod.test_item": "Test Item",
   "item.tutorialmod.smoky_quartz": "Smoky_Quartz",
+  "item.tutorialmod.mahoe_boat": "Mahoe Boat",
+  "item.tutorialmod.mahoe_chest_boat": "Mahoe Boat with Chest",
 
   "block.tutorialmod.glow_blue_wool": "Glowing Blue Wool",
   "block.tutorialmod.glow_brown_wool": "Glowing Brown Wool",

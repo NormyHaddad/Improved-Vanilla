@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#$#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:mahoe_planks"
+    },
+    "$": {
+      "item": "minecraft:chest"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:mahoe_chest_boat",
+    "count": 1
+  }
+}

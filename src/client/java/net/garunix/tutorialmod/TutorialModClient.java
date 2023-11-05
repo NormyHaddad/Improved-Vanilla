@@ -1,11 +1,13 @@
 package net.garunix.tutorialmod;
 
+import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.garunix.tutorialmod.block.ModBlocks;
+import net.garunix.tutorialmod.entity.ModBoats;
 import net.garunix.tutorialmod.entity.ModEntities;
 import net.garunix.tutorialmod.entity.RedCardinalRenderer;
 import net.garunix.tutorialmod.particles.Firefly;
@@ -36,10 +38,11 @@ public class TutorialModClient implements ClientModInitializer {
 				ModBlocks.MAHOE_LEAVES,
 				ModBlocks.MOSSY_CALCITE_BRICKS);
 
-		//ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> 0x3495eb, ModBlocks.MAHOE_LEAVES);
-
 		ParticleFactoryRegistry.getInstance().register(TutorialMod.FIREFLY, Firefly.Factory::new);
 
 		EntityRendererRegistry.register(ModEntities.RED_CARDINAL, RedCardinalRenderer::new);
+
+		TerraformBoatClientHelper.registerModelLayers(ModBoats.MAHOE_BOAT_ID, false);
+		TerraformBoatClientHelper.registerModelLayers(ModBoats.MAHOE_CHEST_BOAT_ID, false);
 	}
 }

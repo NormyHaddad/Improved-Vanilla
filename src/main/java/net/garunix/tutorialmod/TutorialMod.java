@@ -10,6 +10,7 @@ import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.garunix.tutorialmod.block.ModBlocks;
 import net.garunix.tutorialmod.block.ModFlammableBlockRegistries;
+import net.garunix.tutorialmod.entity.ModBoats;
 import net.garunix.tutorialmod.entity.ModEntities;
 import net.garunix.tutorialmod.entity.custom.RedCardinalEntity;
 //import net.garunix.tutorialmod.entity.custom.RedCardinalEntityOld;
@@ -58,6 +59,7 @@ public class TutorialMod implements ModInitializer, TerraBlenderApi {
 		cherryModifier.add(ModificationPhase.REPLACEMENTS, ctx, (bsCtx, bmCtx) -> { bmCtx.getEffects().setGrassColor(13427148); });
 		cherryModifier.add(ModificationPhase.REPLACEMENTS, ctx, (bsCtx, bmCtx) -> { bmCtx.getEffects().setFoliageColor(11522223); });
 
+		ModBoats.registerBoats();
 
 		StrippableBlockRegistry.register(ModBlocks.MAPLE_LOG, ModBlocks.STRIPPED_MAPLE_LOG);
 		StrippableBlockRegistry.register(ModBlocks.MAPLE_LOG, ModBlocks.STRIPPED_MAPLE_LOG);
