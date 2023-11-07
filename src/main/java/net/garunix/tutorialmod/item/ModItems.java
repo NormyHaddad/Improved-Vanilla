@@ -30,7 +30,7 @@ public class ModItems {
     public static final Item MAHOE_BOAT = TerraformBoatItemHelper.registerBoatItem(
             ModBoats.MAHOE_BOAT_ID, ModBoats.MAHOE_BOAT_KEY, false);
     public static final Item MAHOE_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(
-            ModBoats.MAHOE_CHEST_BOAT_ID, ModBoats.MAHOE_CHEST_BOAT_KEY, true);
+            ModBoats.MAHOE_CHEST_BOAT_ID, ModBoats.MAHOE_BOAT_KEY, true);
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
     }

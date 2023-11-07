@@ -17,7 +17,7 @@ public class ModBoats {
     public static Identifier MAHOE_CHEST_BOAT_ID = new Identifier(TutorialMod.MOD_ID, "mahoe_chest_boat");
 
     public static final RegistryKey<TerraformBoatType> MAHOE_BOAT_KEY = TerraformBoatTypeRegistry.createKey(MAHOE_BOAT_ID);
-    public static final RegistryKey<TerraformBoatType> MAHOE_CHEST_BOAT_KEY = TerraformBoatTypeRegistry.createKey(MAHOE_CHEST_BOAT_ID);
+    //public static final RegistryKey<TerraformBoatType> MAHOE_CHEST_BOAT_KEY = TerraformBoatTypeRegistry.createKey(MAHOE_CHEST_BOAT_ID);
 
     public static void registerBoats() {
         TerraformBoatType mahoeBoat = new TerraformBoatType.Builder()
