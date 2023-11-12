@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "tutorialmod",
+	"id": "garunixpansion",
 	"version": "${version}",
 	"name": "Tutorial mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
@@ -16,14 +16,14 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.garunix.tutorialmod.TutorialMod"
+			"net.garunix.garunixpansion.Garunixpansion"
 		],
 		"client": [
-			"net.garunix.tutorialmod.TutorialModClient"
+			"net.garunix.garunixpansion.GarunixpansionClient"
 		]
 	},
 	"mixins": [
-		"tutorialmod.mixins.json"
+		"garunixpansion.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
@@ -35,10 +35,10 @@
 	},
 	"entrypoints": {
 		"fabric-datagen": [
-			"net.garunix.tutorialmod.datagen.TutorialModDatagen"
+			"net.garunix.garunixpansion.datagen.GarunixpansionDatagen"
 		],
 		"terrablender": [
-			"net.garunix.tutorialmod.TutorialMod"
+			"net.garunix.garunixpansion.Garunixpansion"
 		]
 	},
 	"suggests": {

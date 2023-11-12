@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "garunixpansion:block/stripped_mahoe_log_top",
+    "side": "garunixpansion:block/stripped_mahoe_log"
+  }
+}

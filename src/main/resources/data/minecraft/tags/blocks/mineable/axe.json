@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:maple_planks",
-    "tutorialmod:maple_slab",
-    "tutorialmod:maple_stairs",
-    "tutorialmod:maple_trapdoor",
-    "tutorialmod:mahoe_planks",
-    "tutorialmod:mahoe_slab",
-    "tutorialmod:mahoe_stairs",
-    "tutorialmod:maple_trapdoor",
-    "tutorialmod:mahoe_trapdoor"
+    "garunixpansion:maple_planks",
+    "garunixpansion:maple_slab",
+    "garunixpansion:maple_stairs",
+    "garunixpansion:maple_trapdoor",
+    "garunixpansion:mahoe_planks",
+    "garunixpansion:mahoe_slab",
+    "garunixpansion:mahoe_stairs",
+    "garunixpansion:maple_trapdoor",
+    "garunixpansion:mahoe_trapdoor"
   ]
 }

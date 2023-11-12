@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "garunixpansion:block/maple_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "garunixpansion:block/maple_wood"
+    },
+    "axis=z": {
+      "model": "garunixpansion:block/maple_wood",
+      "x": 90
+    }
+  }
+}

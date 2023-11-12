@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:vine"
+    },
+    {
+      "item": "garunixpansion:cracked_calcite_bricks"
+    }
+  ],
+  "result": {
+    "item": "garunixpansion:mossy_cracked_calcite_bricks",
+    "count": 1
+  }
+}

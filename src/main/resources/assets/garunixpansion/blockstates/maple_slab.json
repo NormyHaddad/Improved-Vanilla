@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "garunixpansion:block/maple_slab"
+    },
+    "type=double": {
+      "model": "garunixpansion:block/maple_planks"
+    },
+    "type=top": {
+      "model": "garunixpansion:block/maple_slab_top"
+    }
+  }
+}

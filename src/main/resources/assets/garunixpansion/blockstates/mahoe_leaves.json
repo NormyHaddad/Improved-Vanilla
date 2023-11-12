@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "garunixpansion:block/mahoe_leaves/block/0"
+      },
+      {
+        "model": "garunixpansion:block/mahoe_leaves/block/1"
+      },
+      {
+        "model": "garunixpansion:block/mahoe_leaves/block/2"
+      },
+      {
+        "model": "garunixpansion:block/mahoe_leaves/block/3"
+      },
+      {
+        "model": "garunixpansion:block/mahoe_leaves/block/4"
+      }
+    ]
+  }
+}

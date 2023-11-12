@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "tutorialmod:block/mahoe_planks",
-    "side": "tutorialmod:block/mahoe_planks",
-    "top": "tutorialmod:block/mahoe_planks"
-  }
-}

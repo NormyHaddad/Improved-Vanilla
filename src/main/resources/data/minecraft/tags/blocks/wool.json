@@ -1,20 +1,20 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:glow_blue_wool",
-    "tutorialmod:glow_brown_wool",
-    "tutorialmod:glow_cyan_wool",
-    "tutorialmod:glow_gray_wool",
-    "tutorialmod:glow_green_wool",
-    "tutorialmod:glow_light_blue_wool",
-    "tutorialmod:glow_light_gray_wool",
-    "tutorialmod:glow_lime_wool",
-    "tutorialmod:glow_magenta_wool",
-    "tutorialmod:glow_orange_wool",
-    "tutorialmod:glow_pink_wool",
-    "tutorialmod:glow_purple_wool",
-    "tutorialmod:glow_red_wool",
-    "tutorialmod:glow_white_wool",
-    "tutorialmod:glow_yellow_wool"
+    "garunixpansion:glow_blue_wool",
+    "garunixpansion:glow_brown_wool",
+    "garunixpansion:glow_cyan_wool",
+    "garunixpansion:glow_gray_wool",
+    "garunixpansion:glow_green_wool",
+    "garunixpansion:glow_light_blue_wool",
+    "garunixpansion:glow_light_gray_wool",
+    "garunixpansion:glow_lime_wool",
+    "garunixpansion:glow_magenta_wool",
+    "garunixpansion:glow_orange_wool",
+    "garunixpansion:glow_pink_wool",
+    "garunixpansion:glow_purple_wool",
+    "garunixpansion:glow_red_wool",
+    "garunixpansion:glow_white_wool",
+    "garunixpansion:glow_yellow_wool"
   ]
 }

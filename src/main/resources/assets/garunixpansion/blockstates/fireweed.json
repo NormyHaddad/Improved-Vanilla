@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "garunixpansion:block/fireweed_bottom"
+    },
+    "half=upper": {
+      "model": "garunixpansion:block/fireweed_top"
+    }
+  }
+}

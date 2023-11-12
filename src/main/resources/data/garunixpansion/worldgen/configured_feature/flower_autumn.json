@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:flower",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:noise_threshold_provider",
+            "default_state": {
+              "Name": "minecraft:allium"
+            },
+            "high_chance": 0.33333334,
+            "high_states": [
+              {
+                "Name": "minecraft:azure_bluet"
+              },
+              {
+                "Name": "garunixpansion:fireweed"
+              },
+              {
+                "Name": "garunixpansion:glacier_lily"
+              }
+            ],
+            "low_states": [
+              {
+                "Name": "garunixpansion:glacier_lily"
+              },
+              {
+                "Name": "garunixpansion:bunchberry_flower"
+              }
+            ],
+            "noise": {
+              "amplitudes": [
+                1.0
+              ],
+              "firstOctave": 0
+            },
+            "scale": 0.005,
+            "seed": 2534,
+            "threshold": -0.4
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    },
+    "tries": 64,
+    "xz_spread": 12,
+    "y_spread": 4
+  }
+}

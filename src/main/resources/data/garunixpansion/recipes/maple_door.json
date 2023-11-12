@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "garunixpansion:maple_planks"
+    }
+  },
+  "result": {
+    "item": "garunixpansion:maple_door",
+    "count": 2
+  }
+}

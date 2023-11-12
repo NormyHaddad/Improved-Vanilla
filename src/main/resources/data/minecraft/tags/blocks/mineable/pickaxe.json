@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:smoky_quartz_block",
-    "tutorialmod:smooth_smoky_quartz_block",
-    "tutorialmod:calcite_bricks",
-    "tutorialmod:mossy_calcite_bricks",
-    "tutorialmod:cracked_calcite_bricks",
-    "tutorialmod:mossy_cracked_calcite_bricks",
-    "tutorialmod:mossy_deepslate_bricks",
-    "tutorialmod:mossy_cracked_deepslate_bricks",
-    "tutorialmod:mossy_cracked_stone_bricks"
+    "garunixpansion:smoky_quartz_block",
+    "garunixpansion:smooth_smoky_quartz_block",
+    "garunixpansion:calcite_bricks",
+    "garunixpansion:mossy_calcite_bricks",
+    "garunixpansion:cracked_calcite_bricks",
+    "garunixpansion:mossy_cracked_calcite_bricks",
+    "garunixpansion:mossy_deepslate_bricks",
+    "garunixpansion:mossy_cracked_deepslate_bricks",
+    "garunixpansion:mossy_cracked_stone_bricks"
   ]
 }

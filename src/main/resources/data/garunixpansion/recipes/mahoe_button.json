@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garunixpansion:mahoe_planks"
+    }
+  ],
+  "result": {
+    "item": "garunixpansion:mahoe_button",
+    "count": 4
+  }
+}

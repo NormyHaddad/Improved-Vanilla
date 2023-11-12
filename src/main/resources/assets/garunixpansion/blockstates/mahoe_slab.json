@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "garunixpansion:block/mahoe_slab"
+    },
+    "type=double": {
+      "model": "garunixpansion:block/mahoe_planks"
+    },
+    "type=top": {
+      "model": "garunixpansion:block/mahoe_slab_top"
+    }
+  }
+}

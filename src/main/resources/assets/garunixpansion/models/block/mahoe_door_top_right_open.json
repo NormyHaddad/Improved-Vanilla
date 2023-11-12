@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "garunixpansion:block/mahoe_door_bottom",
+    "top": "garunixpansion:block/mahoe_door_top"
+  }
+}

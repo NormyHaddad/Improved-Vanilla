@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:maple_fence_gate",
-    "tutorialmod:mahoe_fence_gate"
+    "garunixpansion:maple_fence_gate",
+    "garunixpansion:mahoe_fence_gate"
   ]
 }

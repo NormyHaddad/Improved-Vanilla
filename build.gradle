@@ -43,7 +43,7 @@ loom {
 			name "Data Generation Client"
 			vmArg "-Dfabric-api.datagen"
 			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
-			vmArg "-Dfabric-api.datagen.modid=tutorialmod"
+			vmArg "-Dfabric-api.datagen.modid=garunixpansion"
 
 			ideConfigGenerated = true
 			runDir "build/datagen"

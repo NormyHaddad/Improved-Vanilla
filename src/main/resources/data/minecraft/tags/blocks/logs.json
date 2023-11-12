@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:maple_log",
-    "tutorialmod:maple_wood",
-    "tutorialmod:stripped_maple_log",
-    "tutorialmod:stripped_maple_wood",
-    "tutorialmod:mahoe_log",
-    "tutorialmod:stripped_mahoe_log",
-    "tutorialmod:mahoe_wood",
-    "tutorialmod:stripped_mahoe_wood"
+    "garunixpansion:maple_log",
+    "garunixpansion:maple_wood",
+    "garunixpansion:stripped_maple_log",
+    "garunixpansion:stripped_maple_wood",
+    "garunixpansion:mahoe_log",
+    "garunixpansion:stripped_mahoe_log",
+    "garunixpansion:mahoe_wood",
+    "garunixpansion:stripped_mahoe_wood"
   ]
 }

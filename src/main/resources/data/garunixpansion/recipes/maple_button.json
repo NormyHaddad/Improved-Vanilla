@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garunixpansion:maple_planks"
+    }
+  ],
+  "result": {
+    "item": "garunixpansion:maple_button",
+    "count": 4
+  }
+}
