@@ -25,6 +25,15 @@
         "processors": "minecraft:street_plains",
         "projection": "terrain_matching"
       },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "garunixpansion:village/cherry/streets/straight_04",
+        "processors": "minecraft:street_plains",
+        "projection": "terrain_matching"
+      },
       "weight": 2
     },
     {
@@ -34,7 +43,7 @@
         "processors": "minecraft:street_plains",
         "projection": "terrain_matching"
       },
-      "weight": 2
+      "weight": 1
     },
     {
       "element": {
@@ -43,7 +52,7 @@
         "processors": "minecraft:street_plains",
         "projection": "terrain_matching"
       },
-      "weight": 2
+      "weight": 1
     },
     {
       "element": {
@@ -52,7 +61,16 @@
         "processors": "minecraft:street_plains",
         "projection": "terrain_matching"
       },
-      "weight": 2
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "garunixpansion:village/cherry/streets/crossroad_04",
+        "processors": "minecraft:street_plains",
+        "projection": "terrain_matching"
+      },
+      "weight": 1
     }
   ],
   "fallback": "garunixpansion:village/cherry/terminators"

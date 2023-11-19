@@ -35,6 +35,33 @@
         "projection": "rigid"
       },
       "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "garunixpansion:village/cherry/houses/small_cherry_grove_house_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "garunixpansion:village/cherry/houses/small_cherry_grove_house_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "garunixpansion:village/cherry/houses/big_cherry_grove_house_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
     }
   ],
   "fallback": "minecraft:village/plains/terminators"
