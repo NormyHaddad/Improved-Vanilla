@@ -3,13 +3,24 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/plains/plains_lamp_1",
+        "location": "garunixpansion:village/cherry/decor/cherry_lamp_1",
         "processors": {
           "processors": []
         },
         "projection": "rigid"
       },
       "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "garunixpansion:village/cherry/decor/cherry_lamp_2",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
+      },
+      "weight": 1
     },
     {
       "element": {
