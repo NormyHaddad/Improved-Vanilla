@@ -25,7 +25,7 @@
         "processors": "minecraft:empty",
         "projection": "rigid"
       },
-      "weight": 2
+      "weight": 3
     },
     {
       "element": {
@@ -121,6 +121,15 @@
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
         "location": "garunixpansion:village/cherry/houses/cherry_butcher_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:legacy_single_pool_element",
+        "location": "garunixpansion:village/cherry/houses/cherry_armorer_1",
         "processors": "minecraft:empty",
         "projection": "rigid"
       },
