@@ -5,10 +5,30 @@
     "garunixpansion:maple_slab",
     "garunixpansion:maple_stairs",
     "garunixpansion:maple_trapdoor",
+    "garunixpansion:maple_fence_gate",
+    "garunixpansion:maple_sign",
+    "garunixpansion:maple_wall_sign",
+    "garunixpansion:maple_hanging_sign",
+    "garunixpansion:maple_wall_hanging_sign",
+
     "garunixpansion:mahoe_planks",
     "garunixpansion:mahoe_slab",
     "garunixpansion:mahoe_stairs",
-    "garunixpansion:maple_trapdoor",
-    "garunixpansion:mahoe_trapdoor"
+    "garunixpansion:mahoe_trapdoor",
+    "garunixpansion:mahoe_fence_gate",
+    "garunixpansion:mahoe_sign",
+    "garunixpansion:mahoe_wall_sign",
+    "garunixpansion:mahoe_hanging_sign",
+    "garunixpansion:mahoe_wall_hanging_sign",
+
+
+    "garunixpansion:strange_planks",
+    "garunixpansion:strange_slab",
+    "garunixpansion:strange_stairs",
+    "garunixpansion:strange_fence_gate",
+    "garunixpansion:strange_sign",
+    "garunixpansion:strange_wall_sign",
+    "garunixpansion:strange_hanging_sign",
+    "garunixpansion:strange_wall_hanging_sign"
   ]
 }

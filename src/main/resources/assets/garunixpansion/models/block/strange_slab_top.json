@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "garunixpansion:block/strange_planks",
+    "side": "garunixpansion:block/strange_planks",
+    "top": "garunixpansion:block/strange_planks"
+  }
+}

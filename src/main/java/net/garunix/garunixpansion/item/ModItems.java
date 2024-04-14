@@ -20,16 +20,28 @@ public class ModItems {
             new SignItem(new Item.Settings().maxCount(16), ModBlocks.MAPLE_SIGN, ModBlocks.MAPLE_WALL_SIGN));
     public static final Item MAPLE_HANGING_SIGN = registerItem("maple_hanging_sign",
             new HangingSignItem(ModBlocks.MAPLE_HANGING_SIGN, ModBlocks.MAPLE_WALL_HANGING_SIGN, new Item.Settings().maxCount(16)));
+
     public static final Item MAHOE_SIGN = registerItem("mahoe_sign",
             new SignItem(new Item.Settings().maxCount(16), ModBlocks.MAHOE_SIGN, ModBlocks.MAHOE_WALL_SIGN));
     public static final Item MAHOE_HANGING_SIGN = registerItem("mahoe_hanging_sign",
             new HangingSignItem(ModBlocks.MAHOE_HANGING_SIGN, ModBlocks.MAHOE_WALL_HANGING_SIGN, new Item.Settings().maxCount(16)));
+
     public static final Item RED_CARDINAL_SPAWN_EGG = registerItem("red_cardinal_spawn_egg",
             new SpawnEggItem(ModEntities.RED_CARDINAL, 0xE30000, 0x262020, new FabricItemSettings()));
+
     public static final Item MAHOE_BOAT = TerraformBoatItemHelper.registerBoatItem(
             ModBoats.MAHOE_BOAT_ID, ModBoats.MAHOE_BOAT_KEY, false);
     public static final Item MAHOE_CHEST_BOAT = TerraformBoatItemHelper.registerBoatItem(
             ModBoats.MAHOE_CHEST_BOAT_ID, ModBoats.MAHOE_BOAT_KEY, true);
+
+    public static final Item BLUEBERRIES = Registry.register(Registries.ITEM,
+            new Identifier("garunixpansion", "blueberries"), new Item(new FabricItemSettings().food(ModFoodComponents.BLUEBERRY)));
+
+    public static final Item STRANGE_SIGN = registerItem("strange_sign",
+            new SignItem(new Item.Settings().maxCount(16), ModBlocks.STRANGE_SIGN, ModBlocks.STRANGE_WALL_SIGN));
+    public static final Item STRANGE_HANGING_SIGN = registerItem("strange_hanging_sign",
+            new HangingSignItem(ModBlocks.STRANGE_HANGING_SIGN, ModBlocks.STRANGE_WALL_HANGING_SIGN, new Item.Settings().maxCount(16)));
+
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(Garunixpansion.MOD_ID, name), item);
     }
@@ -43,11 +55,12 @@ public class ModItems {
             content.addAfter(Items.CHERRY_HANGING_SIGN, MAHOE_SIGN);
             content.addAfter(Items.CHERRY_HANGING_SIGN, MAPLE_HANGING_SIGN);
             content.addAfter(Items.CHERRY_HANGING_SIGN, MAPLE_SIGN);
-
+            content.addAfter(Items.CHERRY_HANGING_SIGN, STRANGE_HANGING_SIGN);
+            content.addAfter(Items.CHERRY_HANGING_SIGN, STRANGE_SIGN);
         });
     }
 
     public static void registerModItems(){
-        //Garunixpansion.LOGGER.debug("registering mod items for " + Garunixpansion.MOD_ID);
+
     }
 }

@@ -1,8 +1,1 @@
-// 1.20.1	2023-10-25T15:41:18.1396133	Tutorial mod/Block Loot Tables
-3af2f04ae957d9416a727ddad9337efa356c1e73 data\tutorialmod\loot_tables\blocks\mossy_cracked_stone_bricks.json
-04e3613f3dd2542d7c2c48b86cf8dd45a5b2315b data\tutorialmod\loot_tables\blocks\mossy_deepslate_bricks.json
-854bb338a4a5c2fad2b8de89e859561025adc363 data\tutorialmod\loot_tables\blocks\cracked_calcite_bricks.json
-dfe7b950918cd77353f58576cb341168df7d5d67 data\tutorialmod\loot_tables\blocks\mossy_cracked_calcite_bricks.json
-9f24c525aaa7bd991e863b6a726488becd5a66f5 data\tutorialmod\loot_tables\blocks\mossy_calcite_bricks.json
-c430241274fe5a00ea2ae023d164d1af4af0c9ba data\tutorialmod\loot_tables\blocks\mossy_cracked_deepslate_bricks.json
-f73ea7bc5a0030b66ea373d9dee00f45cb5cdb63 data\tutorialmod\loot_tables\blocks\calcite_bricks.json
+// 1.20.1	2024-04-13T21:28:19.22339	Tutorial mod/Block Loot Tables

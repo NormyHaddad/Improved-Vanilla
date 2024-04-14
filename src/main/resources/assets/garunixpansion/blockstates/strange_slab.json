@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "garunixpansion:block/strange_slab"
+    },
+    "type=double": {
+      "model": "garunixpansion:block/strange_planks"
+    },
+    "type=top": {
+      "model": "garunixpansion:block/strange_slab_top"
+    }
+  }
+}

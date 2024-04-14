@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#$#",
+    "#$#"
+  ],
+  "key": {
+    "$": {
+      "item": "garunixpansion:strange_planks"
+    },
+    "#": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "garunixpansion:strange_fence_gate",
+    "count": 3
+  }
+}

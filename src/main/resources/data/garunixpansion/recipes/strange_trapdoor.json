@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "garunixpansion:strange_planks"
+    }
+  },
+  "result": {
+    "item": "garunixpansion:strange_trapdoor",
+    "count": 2
+  }
+}

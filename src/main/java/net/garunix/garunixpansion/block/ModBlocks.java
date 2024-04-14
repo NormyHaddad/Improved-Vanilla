@@ -1,5 +1,10 @@
 package net.garunix.garunixpansion.block;
 
+import com.terraformersmc.terraform.sign.block.TerraformHangingSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformWallHangingSignBlock;
+import com.terraformersmc.terraform.sign.block.TerraformWallSignBlock;
+import jdk.jshell.Snippet;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -8,6 +13,8 @@ import net.garunix.garunixpansion.world.tree.MahoeSaplingGenerator;
 import net.garunix.garunixpansion.world.tree.MapleSaplingGenerator;
 import net.garunix.garunixpansion.world.tree.StrangeSaplingGenerator;
 import net.minecraft.block.*;
+import net.minecraft.data.family.BlockFamilies;
+import net.minecraft.data.family.BlockFamily;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -48,9 +55,9 @@ public class ModBlocks {
 
     //Other
     public static final Block MAPLE_TRAPDOOR = registerBlock("maple_trapdoor", new TrapdoorBlock(
-            FabricBlockSettings.copyOf(Blocks.CHERRY_TRAPDOOR).mapColor(MapColor.OFF_WHITE), BlockSetType.CHERRY), ItemGroups.BUILDING_BLOCKS);
+            FabricBlockSettings.copyOf(Blocks.CHERRY_TRAPDOOR).mapColor(MapColor.OFF_WHITE), ModBlockSetType.MAPLE), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAPLE_DOOR = registerBlock("maple_door", new DoorBlock(
-            FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR).mapColor(MapColor.OFF_WHITE), BlockSetType.CHERRY), ItemGroups.BUILDING_BLOCKS);
+            FabricBlockSettings.copyOf(Blocks.CHERRY_DOOR).mapColor(MapColor.OFF_WHITE), ModBlockSetType.MAPLE), ItemGroups.BUILDING_BLOCKS);
     public static final Block MAPLE_SIGN = registerItemlessBlock("maple_sign", new SignBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.OFF_WHITE), ModWoodType.MAPLE));
     public static final Block MAPLE_WALL_SIGN = registerItemlessBlock("maple_wall_sign", new WallSignBlock(
@@ -114,6 +121,50 @@ public class ModBlocks {
     public static final Block MAHOE_WALL_HANGING_SIGN = registerItemlessBlock("mahoe_wall_hanging_sign", new WallHangingSignBlock(
             FabricBlockSettings.copyOf(Blocks.CHERRY_WALL_HANGING_SIGN).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE), ModWoodType.MAHOE));
     //endregion
+    
+    //region Strange blocks
+    //region Stem/foliage
+    public static final Block STRANGE_STEM = registerBlock("strange_stem", new MushroomBlock(
+            FabricBlockSettings.copyOf(Blocks.CRIMSON_STEM).mapColor(MapColor.PURPLE)), ItemGroups.NATURAL);
+    public static final Block STRANGE_LEAVES = registerBlock("strange_leaves", new Block(
+            FabricBlockSettings.copyOf(Blocks.NETHER_WART_BLOCK).mapColor(MapColor.LICHEN_GREEN)), ItemGroups.NATURAL);
+
+    //endregion
+    //region Planks & variants
+    public static final Block STRANGE_PLANKS = registerBlock("strange_planks", new Block(
+            FabricBlockSettings.copyOf(Blocks.CRIMSON_PLANKS).mapColor(MapColor.PALE_PURPLE)), ItemGroups.NATURAL);
+    public static final Block STRANGE_SLAB = registerBlock("strange_slab", new SlabBlock(
+            FabricBlockSettings.copyOf(Blocks.CRIMSON_SLAB).mapColor(MapColor.PALE_PURPLE)), ItemGroups.NATURAL);
+    public static final Block STRANGE_STAIRS = registerBlock("strange_stairs", new StairsBlock(
+            ModBlocks.STRANGE_PLANKS.getDefaultState(),
+            FabricBlockSettings.copyOf(Blocks.CRIMSON_STAIRS).mapColor(MapColor.PALE_PURPLE)), ItemGroups.NATURAL);
+    public static final Block STRANGE_FENCE = registerBlock("strange_fence", new FenceBlock(
+            FabricBlockSettings.copyOf(Blocks.CRIMSON_FENCE).mapColor(MapColor.PALE_PURPLE)), ItemGroups.BUILDING_BLOCKS);
+    public static final Block STRANGE_FENCE_GATE = registerBlock("strange_fence_gate", new FenceGateBlock(
+            FabricBlockSettings.copyOf(Blocks.CRIMSON_FENCE).mapColor(MapColor.PALE_PURPLE), ModWoodType.STRANGE), ItemGroups.BUILDING_BLOCKS);
+
+    //endregion
+    //region Other
+    public static final Block STRANGE_DOOR = registerBlock("strange_door", new DoorBlock(
+            FabricBlockSettings.copyOf(Blocks.CRIMSON_DOOR).mapColor(MapColor.PALE_PURPLE), ModBlockSetType.STRANGE), ItemGroups.BUILDING_BLOCKS);
+    public static final Block STRANGE_TRAPDOOR = registerBlock("strange_trapdoor", new TrapdoorBlock(
+            FabricBlockSettings.copyOf(Blocks.CRIMSON_TRAPDOOR).mapColor(MapColor.PALE_PURPLE), ModBlockSetType.STRANGE), ItemGroups.BUILDING_BLOCKS);
+    public static final Block STRANGE_PRESSURE_PLATE = registerBlock("strange_pressure_plate", new PressurePlateBlock(
+            PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.CRIMSON_PRESSURE_PLATE).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE),
+            ModBlockSetType.STRANGE), ItemGroups.BUILDING_BLOCKS);
+    public static final Block STRANGE_BUTTON = registerBlock("strange_button", new ButtonBlock(
+            FabricBlockSettings.copyOf(Blocks.CRIMSON_BUTTON).mapColor(MapColor.TERRACOTTA_LIGHT_BLUE),
+            ModBlockSetType.STRANGE, 30, true), ItemGroups.BUILDING_BLOCKS);
+    public static final Block STRANGE_SIGN = registerItemlessBlock("strange_sign", new SignBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_SIGN).mapColor(MapColor.PALE_PURPLE), ModWoodType.STRANGE));
+    public static final Block STRANGE_WALL_SIGN = registerItemlessBlock("strange_wall_sign", new WallSignBlock(
+            FabricBlockSettings.copyOf(ModBlocks.STRANGE_SIGN).mapColor(MapColor.PALE_PURPLE), ModWoodType.STRANGE));
+    public static final Block STRANGE_HANGING_SIGN = registerItemlessBlock("strange_hanging_sign", new HangingSignBlock(
+            FabricBlockSettings.copyOf(Blocks.CHERRY_HANGING_SIGN).mapColor(MapColor.PALE_PURPLE), ModWoodType.STRANGE));
+    public static final Block STRANGE_WALL_HANGING_SIGN = registerItemlessBlock("strange_wall_hanging_sign", new WallHangingSignBlock(
+            FabricBlockSettings.copyOf(ModBlocks.STRANGE_HANGING_SIGN).mapColor(MapColor.PALE_PURPLE), ModWoodType.STRANGE));
+//    //endregion
+    //endregion
 
     //region Misc
     public static final Block SMOOTH_SMOKY_QUARTZ_BLOCK = registerBlock("smooth_smoky_quartz_block",
@@ -163,6 +214,12 @@ public class ModBlocks {
     public static final Block FIREWEED = registerBlock("fireweed",
             new TallFlowerBlock(FabricBlockSettings.copyOf(Blocks.LILAC) .mapColor(MapColor.DARK_GREEN)),
             ItemGroups.NATURAL);
+    public static final Block BLUEBERRY_BUSH = registerBlock("blueberry_bush",
+            new BlueberryBush(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH)
+                    .mapColor(MapColor.EMERALD_GREEN)), ItemGroups.NATURAL);
+    public static final Block GHOST_PIPES = registerBlock("ghost_pipes",
+            new FlowerBlock(StatusEffects.INVISIBILITY, 15, FabricBlockSettings.copyOf(Blocks.LILY_OF_THE_VALLEY)
+                    .mapColor(MapColor.WHITE)), ItemGroups.NATURAL);
     //endregion
 
     //region Glowing wool blocks
@@ -233,6 +290,11 @@ public class ModBlocks {
 
     public static void orderItems() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {
+            content.addAfter(Items.CHERRY_BUTTON, STRANGE_SLAB);
+            content.addAfter(Items.CHERRY_BUTTON, STRANGE_STAIRS);
+            content.addAfter(Items.CHERRY_BUTTON, STRANGE_PLANKS);
+            content.addAfter(Items.CHERRY_BUTTON, STRANGE_STEM);
+
             content.addAfter(Items.CHERRY_BUTTON, MAHOE_BUTTON);
             content.addAfter(Items.CHERRY_BUTTON, MAHOE_PRESSURE_PLATE);
             content.addAfter(Items.CHERRY_BUTTON, MAHOE_TRAPDOOR);

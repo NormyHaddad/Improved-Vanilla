@@ -2,12 +2,13 @@
   "replace": false,
   "values": [
     "garunixpansion:maple_log",
-    "garunixpansion:maple_wood",
     "garunixpansion:stripped_maple_log",
+    "garunixpansion:maple_wood",
     "garunixpansion:stripped_maple_wood",
     "garunixpansion:mahoe_log",
     "garunixpansion:stripped_mahoe_log",
     "garunixpansion:mahoe_wood",
-    "garunixpansion:stripped_mahoe_wood"
+    "garunixpansion:stripped_mahoe_wood",
+    "garunixpansion:strange_stem"
   ]
 }

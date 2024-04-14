@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "garunixpansion:block/strange_door_bottom",
+    "top": "garunixpansion:block/strange_door_top"
+  }
+}

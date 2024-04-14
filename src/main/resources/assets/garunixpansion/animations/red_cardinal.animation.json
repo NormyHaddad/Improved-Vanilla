@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"animation.red_cardinal.takeoff": {
-			"loop": "hold_on_last_frame",
+			"loop": "play_once",
 			"animation_length": 0.25,
 			"bones": {
 				"Mainbody": {

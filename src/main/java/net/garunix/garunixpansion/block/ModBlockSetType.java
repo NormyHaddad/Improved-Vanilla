@@ -11,5 +11,7 @@ public class ModBlockSetType {
             new Identifier(Garunixpansion.MOD_ID, "maple"));
     public static final BlockSetType MAHOE = BlockSetTypeBuilder.copyOf(BlockSetType.JUNGLE).register(
             new Identifier(Garunixpansion.MOD_ID, "mahoe"));
+    public static final BlockSetType STRANGE = BlockSetTypeBuilder.copyOf(BlockSetType.CRIMSON).register(
+            new Identifier(Garunixpansion.MOD_ID, "strange"));
     public void init() {}
 }

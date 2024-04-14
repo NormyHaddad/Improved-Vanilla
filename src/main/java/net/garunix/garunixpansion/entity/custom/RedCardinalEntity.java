@@ -26,8 +26,13 @@ import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
-import software.bernie.geckolib.core.animation.*;
+import software.bernie.geckolib.core.animation.AnimatableManager;
+import software.bernie.geckolib.core.animation.AnimationController;
+import software.bernie.geckolib.core.animation.AnimationState;
+import software.bernie.geckolib.core.animation.RawAnimation;
 import software.bernie.geckolib.core.object.PlayState;
+
+import java.util.Random;
 
 
 public class RedCardinalEntity extends AnimalEntity implements GeoEntity, Flutterer {
@@ -48,13 +53,15 @@ public class RedCardinalEntity extends AnimalEntity implements GeoEntity, Flutte
                 .add(EntityAttributes.GENERIC_FLYING_SPEED, 0.6f);
     }
 
+    Random rand = new Random();
+
     @Override
     protected void initGoals() {
         this.goalSelector.add(0, new EscapeDangerGoal(this, 1.25));
-        this.goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(1, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
+        this.goalSelector.add(1, new SwimGoal(this));
         this.goalSelector.add(2, new FlyOntoTreeGoal(this, 1.0));
-        this.goalSelector.add(3, new FollowMobGoal(this, 1.0, 3.0f, 7.0f));
+        this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
+        this.goalSelector.add(4, new FollowMobGoal(this, 1.0, 3.0f, 7.0f));
 
         //this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
     }
@@ -71,7 +78,37 @@ public class RedCardinalEntity extends AnimalEntity implements GeoEntity, Flutte
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
-        controllerRegistrar.add(new AnimationController<>(this, "controller",0, this::predicate));
+        controllerRegistrar.add(new AnimationController<>(this, 1, this::predicate));
+    }
+
+    private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
+        if (isSwimming()) {
+            tAnimationState.getController().setAnimation(RawAnimation.begin().thenPlay(
+                    "animation.red_cardinal.fall"));
+            return PlayState.CONTINUE;
+        }
+        else if (!isOnGround() && this.getVelocity().y > -0.1f) {
+            tAnimationState.getController().setAnimation(RawAnimation.begin().thenPlay(
+                    "animation.red_cardinal.fly"));
+            return PlayState.CONTINUE;
+        }
+        else if (!isOnGround() && this.getVelocity().y <= -0.1f) {
+            tAnimationState.getController().setAnimation(RawAnimation.begin().thenPlay(
+                    "animation.red_cardinal.fall"));
+            return PlayState.CONTINUE;
+        }
+
+        tAnimationState.getController().forceAnimationReset();
+        return PlayState.STOP;
+    }
+
+    public void tickMovement() {
+        Vec3d vel;
+        if (!isOnGround() && this.getVelocity().y <= -0.1f) {
+            vel = new Vec3d(this.getVelocity().x, MathHelper.clamp(this.getVelocity().y, -0.1f, 0.5f), this.getVelocity().z);
+            this.setVelocity(vel);
+        }
+        super.tickMovement();
     }
 
     @Override
@@ -81,28 +118,6 @@ public class RedCardinalEntity extends AnimalEntity implements GeoEntity, Flutte
         birdNavigation.setCanSwim(true);
         birdNavigation.setCanEnterOpenDoors(true);
         return birdNavigation;
-    }
-
-    private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
-        /*if (tAnimationState.isMoving()) {
-            tAnimationState.getController().setAnimation(RawAnimation.begin().then(
-                    "animation.red_cardinal.fall", Animation.LoopType.LOOP)); }*/
-        tAnimationState.getController().setAnimation(RawAnimation.begin().then(
-                "animation.red_cardinal.peck", Animation.LoopType.PLAY_ONCE));
-
-        if (!isOnGround()) {
-            tAnimationState.getController().setAnimation(RawAnimation.begin().then(
-                    "animation.red_cardinal.fly", Animation.LoopType.LOOP));
-        }
-        if (isOnGround()) {
-            tAnimationState.getController().setAnimation(RawAnimation.begin().then(
-                    "animation.red_cardinal.preen", Animation.LoopType.PLAY_ONCE));
-        }
-        if (isFallFlying()) {
-            tAnimationState.getController().setAnimation(RawAnimation.begin().then(
-                    "animation.red_cardinal.fall", Animation.LoopType.PLAY_ONCE));
-        }
-        return PlayState.CONTINUE;
     }
 
     @Override

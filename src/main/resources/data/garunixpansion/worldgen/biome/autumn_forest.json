@@ -47,9 +47,9 @@
       },
       {
         "type": "garunixpansion:red_cardinal",
-        "maxCount": 4,
+        "maxCount": 8,
         "minCount": 4,
-        "weight": 10
+        "weight": 15
       }
     ],
     "misc": [],
