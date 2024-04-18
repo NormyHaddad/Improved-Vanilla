@@ -1,0 +1,324 @@
+{
+  "multipart": [
+    {
+      "apply": [
+        {
+          "model": "garunixpansion:block/passionflower/0"
+        },
+        {
+          "model": "garunixpansion:block/passionflower/1"
+        },
+        {
+          "model": "garunixpansion:block/passionflower/2"
+        },
+        {
+          "model": "garunixpansion:block/passionflower/3"
+        },
+        {
+          "model": "garunixpansion:block/passionflower/4"
+        }
+      ],
+      "when": {
+        "north": "true"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "garunixpansion:block/passionflower/0"
+        },
+        {
+          "model": "garunixpansion:block/passionflower/1"
+        },
+        {
+          "model": "garunixpansion:block/passionflower/2"
+        },
+        {
+          "model": "garunixpansion:block/passionflower/3"
+        },
+        {
+          "model": "garunixpansion:block/passionflower/4"
+        }
+      ],
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "garunixpansion:block/passionflower/0",
+          "uvlock": true,
+          "y": 90
+        },
+        {
+          "model": "garunixpansion:block/passionflower/1",
+          "uvlock": true,
+          "y": 90
+        },
+        {
+          "model": "garunixpansion:block/passionflower/2",
+          "uvlock": true,
+          "y": 90
+        },
+        {
+          "model": "garunixpansion:block/passionflower/3",
+          "uvlock": true,
+          "y": 90
+        },
+        {
+          "model": "garunixpansion:block/passionflower/4",
+          "uvlock": true,
+          "y": 90
+        }
+      ],
+      "when": {
+        "east": "true"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "garunixpansion:block/passionflower/0",
+          "uvlock": true,
+          "y": 90
+        },
+        {
+          "model": "garunixpansion:block/passionflower/1",
+          "uvlock": true,
+          "y": 90
+        },
+        {
+          "model": "garunixpansion:block/passionflower/2",
+          "uvlock": true,
+          "y": 90
+        },
+        {
+          "model": "garunixpansion:block/passionflower/3",
+          "uvlock": true,
+          "y": 90
+        },
+        {
+          "model": "garunixpansion:block/passionflower/4",
+          "uvlock": true,
+          "y": 90
+        }
+      ],
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      }
+    },
+    {
+      "apply": [
+          {
+            "model": "garunixpansion:block/passionflower/0",
+            "uvlock": true,
+            "y": 180
+          },
+          {
+            "model": "garunixpansion:block/passionflower/1",
+            "uvlock": true,
+            "y": 180
+          },
+          {
+            "model": "garunixpansion:block/passionflower/2",
+            "uvlock": true,
+            "y": 180
+          },
+        {
+          "model": "garunixpansion:block/passionflower/3",
+          "uvlock": true,
+          "y": 180
+        },
+        {
+          "model": "garunixpansion:block/passionflower/4",
+          "uvlock": true,
+          "y": 180
+        }
+      ],
+      "when": {
+        "south": "true"
+      }
+    },
+    {
+      "apply": [
+          {
+            "model": "garunixpansion:block/passionflower/0",
+            "uvlock": true,
+            "y": 180
+          },
+          {
+            "model": "garunixpansion:block/passionflower/1",
+            "uvlock": true,
+            "y": 180
+          },
+          {
+            "model": "garunixpansion:block/passionflower/2",
+            "uvlock": true,
+            "y": 180
+          },
+        {
+          "model": "garunixpansion:block/passionflower/3",
+          "uvlock": true,
+          "y": 180
+        },
+        {
+          "model": "garunixpansion:block/passionflower/4",
+          "uvlock": true,
+          "y": 180
+        }
+      ],
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      }
+    },
+    {
+      "apply": [
+          {
+            "model": "garunixpansion:block/passionflower/0",
+            "uvlock": true,
+            "y": 270
+          },
+          {
+            "model": "garunixpansion:block/passionflower/1",
+            "uvlock": true,
+            "y": 270
+          },
+          {
+            "model": "garunixpansion:block/passionflower/2",
+            "uvlock": true,
+            "y": 270
+          },
+        {
+          "model": "garunixpansion:block/passionflower/3",
+          "uvlock": true,
+          "y": 270
+        },
+        {
+          "model": "garunixpansion:block/passionflower/4",
+          "uvlock": true,
+          "y": 270
+        }
+      ],
+      "when": {
+        "west": "true"
+      }
+    },
+    {
+      "apply": [
+          {
+            "model": "garunixpansion:block/passionflower/0",
+            "uvlock": true,
+            "y": 270
+          },
+          {
+            "model": "garunixpansion:block/passionflower/1",
+            "uvlock": true,
+            "y": 270
+          },
+          {
+            "model": "garunixpansion:block/passionflower/2",
+            "uvlock": true,
+            "y": 270
+          },
+        {
+          "model": "garunixpansion:block/passionflower/3",
+          "uvlock": true,
+          "y": 270
+        },
+        {
+          "model": "garunixpansion:block/passionflower/4",
+          "uvlock": true,
+          "y": 270
+        }
+      ],
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      }
+    },
+    {
+      "apply": [
+          {
+            "model": "garunixpansion:block/passionflower/0",
+            "uvlock": true,
+            "x": 270
+          },
+          {
+            "model": "garunixpansion:block/passionflower/1",
+            "uvlock": true,
+            "x": 270
+          },
+          {
+            "model": "garunixpansion:block/passionflower/2",
+            "uvlock": true,
+            "x": 270
+          },
+        {
+          "model": "garunixpansion:block/passionflower/3",
+          "uvlock": true,
+          "x": 270
+        },
+        {
+          "model": "garunixpansion:block/passionflower/4",
+          "uvlock": true,
+          "x": 270
+        }
+      ],
+      "when": {
+        "up": "true"
+      }
+    },
+    {
+      "apply": [
+        {
+          "model": "garunixpansion:block/passionflower/0",
+          "uvlock": true,
+          "x": 270
+        },
+        {
+          "model": "garunixpansion:block/passionflower/1",
+          "uvlock": true,
+          "x": 270
+        },
+        {
+          "model": "garunixpansion:block/passionflower/2",
+          "uvlock": true,
+          "x": 270
+        },
+        {
+          "model": "garunixpansion:block/passionflower/3",
+          "uvlock": true,
+          "x": 270
+        },
+        {
+          "model": "garunixpansion:block/passionflower/4",
+          "uvlock": true,
+          "x": 270
+        }
+      ],
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      }
+    }
+  ]
+}
