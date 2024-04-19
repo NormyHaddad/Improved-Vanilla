@@ -128,8 +128,8 @@ public class ModBlocks {
             FabricBlockSettings.copyOf(Blocks.CRIMSON_STEM).mapColor(MapColor.PURPLE)), ItemGroups.NATURAL);
     public static final Block STRANGE_LEAVES = registerBlock("strange_leaves", new Block(
             FabricBlockSettings.copyOf(Blocks.NETHER_WART_BLOCK).mapColor(MapColor.LICHEN_GREEN)), ItemGroups.NATURAL);
-
     //endregion
+
     //region Planks & variants
     public static final Block STRANGE_PLANKS = registerBlock("strange_planks", new Block(
             FabricBlockSettings.copyOf(Blocks.CRIMSON_PLANKS).mapColor(MapColor.PALE_PURPLE)), ItemGroups.NATURAL);
@@ -142,8 +142,8 @@ public class ModBlocks {
             FabricBlockSettings.copyOf(Blocks.CRIMSON_FENCE).mapColor(MapColor.PALE_PURPLE)), ItemGroups.BUILDING_BLOCKS);
     public static final Block STRANGE_FENCE_GATE = registerBlock("strange_fence_gate", new FenceGateBlock(
             FabricBlockSettings.copyOf(Blocks.CRIMSON_FENCE).mapColor(MapColor.PALE_PURPLE), ModWoodType.STRANGE), ItemGroups.BUILDING_BLOCKS);
-
     //endregion
+
     //region Other
     public static final Block STRANGE_DOOR = registerBlock("strange_door", new DoorBlock(
             FabricBlockSettings.copyOf(Blocks.CRIMSON_DOOR).mapColor(MapColor.PALE_PURPLE), ModBlockSetType.STRANGE), ItemGroups.BUILDING_BLOCKS);
@@ -164,6 +164,7 @@ public class ModBlocks {
     public static final Block STRANGE_WALL_HANGING_SIGN = registerItemlessBlock("strange_wall_hanging_sign", new WallHangingSignBlock(
             FabricBlockSettings.copyOf(ModBlocks.STRANGE_HANGING_SIGN).mapColor(MapColor.PALE_PURPLE), ModWoodType.STRANGE));
 //    //endregion
+    //endregion
     //endregion
 
     //region Misc
@@ -217,6 +218,9 @@ public class ModBlocks {
     public static final Block BLUEBERRY_BUSH = registerBlock("blueberry_bush",
             new BlueberryBush(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH)
                     .mapColor(MapColor.EMERALD_GREEN)), ItemGroups.NATURAL);
+    public static final Block PASSIONFLOWER = registerBlock("passionflower",
+            new VineBlock(FabricBlockSettings.copyOf(Blocks.VINE)
+                    .mapColor(MapColor.DARK_GREEN)), ItemGroups.NATURAL);
     public static final Block GHOST_PIPES = registerBlock("ghost_pipes",
             new FlowerBlock(StatusEffects.INVISIBILITY, 15, FabricBlockSettings.copyOf(Blocks.LILY_OF_THE_VALLEY)
                     .mapColor(MapColor.WHITE)), ItemGroups.NATURAL);

@@ -30,6 +30,8 @@ public class GarunixpansionClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BUNCHBERRY_FLOWER, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUEBERRY_BUSH, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GHOST_PIPES, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PASSIONFLOWER, RenderLayer.getCutout());
+
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAPLE_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAHOE_LEAVES, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAHOE_SAPLING, RenderLayer.getCutout());
@@ -43,7 +45,8 @@ public class GarunixpansionClient implements ClientModInitializer {
 			if (world == null || pos == null) { return -1; }
 			return BiomeColors.getFoliageColor(world, pos); },
 				ModBlocks.MAHOE_LEAVES,
-				ModBlocks.MOSSY_CALCITE_BRICKS);
+				ModBlocks.MOSSY_CALCITE_BRICKS,
+				ModBlocks.PASSIONFLOWER);
 
 		ParticleFactoryRegistry.getInstance().register(Garunixpansion.FIREFLY, Firefly.Factory::new);
 
