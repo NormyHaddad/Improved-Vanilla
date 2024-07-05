@@ -3,27 +3,27 @@ package net.garunix.garunixpansion.entity;
 import net.garunix.garunixpansion.Garunixpansion;
 import net.garunix.garunixpansion.entity.custom.RedCardinalEntity;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.MathHelper;
-import software.bernie.geckolib.constant.DataTickets;
-import software.bernie.geckolib.core.animatable.model.CoreGeoBone;
-import software.bernie.geckolib.core.animation.AnimationState;
+//import net.minecraft.util.math.MathHelper;
+//import software.bernie.geckolib.constant.DataTickets;
+//import software.bernie.geckolib.core.animatable.model.CoreGeoBone;
+//import software.bernie.geckolib.core.animation.AnimationState;
 import software.bernie.geckolib.model.GeoModel;
-import software.bernie.geckolib.model.data.EntityModelData;
+//import software.bernie.geckolib.model.data.EntityModelData;
 
 public class RedCardinalModel extends GeoModel<RedCardinalEntity> {
     @Override
     public Identifier getModelResource(RedCardinalEntity animatable) {
-        return new Identifier(Garunixpansion.MOD_ID, "geo/red_cardinal.geo.json");
+        return Identifier.of(Garunixpansion.MOD_ID, "geo/red_cardinal.geo.json");
     }
 
     @Override
     public Identifier getTextureResource(RedCardinalEntity animatable) {
-        return new Identifier(Garunixpansion.MOD_ID, "textures/entity/red_cardinal.png");
+        return Identifier.of(Garunixpansion.MOD_ID, "textures/entity/red_cardinal.png");
     }
 
     @Override
     public Identifier getAnimationResource(RedCardinalEntity animatable) {
-        return new Identifier(Garunixpansion.MOD_ID, "animations/red_cardinal.animation.json");
+        return Identifier.of(Garunixpansion.MOD_ID, "animations/red_cardinal.animation.json");
     }
 
 //    @Override

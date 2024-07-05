@@ -17,27 +17,27 @@ import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.*;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoEntity;
-import software.bernie.geckolib.core.animatable.GeoAnimatable;
-import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
-import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animation.AnimationController;
-import software.bernie.geckolib.core.animation.AnimationState;
-import software.bernie.geckolib.core.animation.RawAnimation;
-import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animatable.instance.SingletonAnimatableInstanceCache;
+import software.bernie.geckolib.animatable.GeoAnimatable;
+import software.bernie.geckolib.animation.*;
+//import software.bernie.geckolib.object.PlayState;
 
 import java.util.Random;
 
 
 public class RedCardinalEntity extends AnimalEntity implements GeoEntity, Flutterer {
+
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
     public static World world;
+
     public RedCardinalEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
         this.world = world;
@@ -109,6 +109,11 @@ public class RedCardinalEntity extends AnimalEntity implements GeoEntity, Flutte
             this.setVelocity(vel);
         }
         super.tickMovement();
+    }
+
+    @Override
+    public boolean isBreedingItem(ItemStack stack) {
+        return false;
     }
 
     @Override

@@ -6,6 +6,9 @@
   "item.garunixpansion.mahoe_chest_boat": "Maple Boat with Chest",
   "item.garunixpansion.mahoe_chest_boat": "Mahoe Boat with Chest",
   "item.garunixpansion.red_cardinal_spawn_egg": "Red Cardinal Spawn Egg",
+  "item.garunixpansion.blueberries": "Blueberries",
+  "item.garunixpansion.red_rose_seeds": "Red Rose Seeds",
+  "item.garunixpansion.cyan_rose_seeds": "Cyan Rose Seeds",
 
   "block.garunixpansion.glow_blue_wool": "Glowing Blue Wool",
   "block.garunixpansion.glow_brown_wool": "Glowing Brown Wool",
@@ -51,6 +54,10 @@
   "block.garunixpansion.blueberry_bush": "Blueberry Bush",
   "block.garunixpansion.ghost_pipes": "Ghost Pipes",
   "block.garunixpansion.passionflower": "Passionflower",
+  "block.garunixpansion.red_rose": "Rose",
+  "block.garunixpansion.cyan_rose": "Cyan Rose",
+  "block.garunixpansion.pink_orchid": "Pink orchid",
+  "block.garunixpansion.bird_of_paradise": "Bird of Paradise",
 
   "block.garunixpansion.mahoe_log": "Mahoe Log",
   "block.garunixpansion.stripped_mahoe_log": "Stripped Mahoe Log",

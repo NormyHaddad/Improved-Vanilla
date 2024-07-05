@@ -2,6 +2,7 @@ package net.garunix.garunixpansion.world.gen.trunk;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
@@ -15,8 +16,9 @@ import java.util.List;
 import java.util.function.BiConsumer;
 
 public class GiantMapleTrunkPlacer extends GiantTrunkPlacer {
-    public static final Codec<GiantMapleTrunkPlacer> CODEC = RecordCodecBuilder.create(
-            instance -> GiantTrunkPlacer.fillTrunkPlacerFields(instance).apply(instance, GiantMapleTrunkPlacer::new));
+    public static final MapCodec<GiantMapleTrunkPlacer> CODEC = RecordCodecBuilder.mapCodec(instance ->
+            fillTrunkPlacerFields(instance).apply(instance, GiantMapleTrunkPlacer::new));
+
     public GiantMapleTrunkPlacer(int i, int j, int k) { super(i, j, k); }
 
     private void setLog(TestableWorld world, BiConsumer<BlockPos, BlockState> replacer, Random random, BlockPos.Mutable tmpPos, TreeFeatureConfig config, BlockPos startPos, int dx, int dy, int dz) {

@@ -17,7 +17,7 @@ public abstract class ModWorldGeneration implements BiomeModificationContext.Eff
 
     @Override
     public void setGrassColor(Optional<Integer> color) {
-        var savannaModifier = BiomeModifications.create(new Identifier(Garunixpansion.MOD_ID, "bright_green"));
+        var savannaModifier = BiomeModifications.create(Identifier.of(Garunixpansion.MOD_ID, "bright_green"));
         var ctx = BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_SAVANNA);
         savannaModifier.add(ModificationPhase.REPLACEMENTS, ctx, (bsCtx, bmCtx) -> {
             bmCtx.getEffects().setGrassColor(7864064);
@@ -26,7 +26,7 @@ public abstract class ModWorldGeneration implements BiomeModificationContext.Eff
 
     @Override
     public void setFoliageColor(Optional<Integer> color) {
-        var savannaModifier = BiomeModifications.create(new Identifier(Garunixpansion.MOD_ID, "bright_green"));
+        var savannaModifier = BiomeModifications.create(Identifier.of(Garunixpansion.MOD_ID, "bright_green"));
         var ctx = BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_SAVANNA);
         savannaModifier.add(ModificationPhase.REPLACEMENTS, ctx, (bsCtx, bmCtx) -> {
             bmCtx.getEffects().setFoliageColor(7864064);

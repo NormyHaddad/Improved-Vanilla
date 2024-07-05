@@ -15,7 +15,7 @@ public class RedCardinalRenderer extends GeoEntityRenderer<RedCardinalEntity> {
 
     @Override
     public Identifier getTextureLocation(RedCardinalEntity animatable) {
-        return new Identifier(Garunixpansion.MOD_ID, "textures/entity/red_cardinal.png");
+        return Identifier.of(Garunixpansion.MOD_ID, "textures/entity/red_cardinal.png");
     }
 
     @Override

@@ -10,5 +10,10 @@ public class ModTreeGeneration {
     public static void generateTrees() {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SPARSE_JUNGLE), GenerationStep.Feature.VEGETAL_DECORATION,
                 ModPlacedFeatures.MAHOE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.JUNGLE), GenerationStep.Feature.VEGETAL_DECORATION,
+                ModPlacedFeatures.FLOWER_JUNGLE_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS), GenerationStep.Feature.VEGETAL_DECORATION,
+                ModPlacedFeatures.PASSIONFLOWER_JUNGLE_TREE_PLACED_KEY);
     }
 }

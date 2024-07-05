@@ -1,7 +1,6 @@
 package net.garunix.garunixpansion;
 
 import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
-import com.terraformersmc.terraform.sign.SpriteIdentifierRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
@@ -11,16 +10,19 @@ import net.garunix.garunixpansion.block.ModBlocks;
 import net.garunix.garunixpansion.entity.ModBoats;
 import net.garunix.garunixpansion.entity.ModEntities;
 import net.garunix.garunixpansion.entity.RedCardinalRenderer;
+import net.garunix.garunixpansion.particle.ModParticles;
 import net.garunix.garunixpansion.particles.Firefly;
 import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.TexturedRenderLayers;
-import net.minecraft.client.util.SpriteIdentifier;
+import net.minecraft.particle.SimpleParticleType;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 
 public class GarunixpansionClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
+		// Block render layers
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SMOOTH_SMOKY_QUARTZ_BLOCK, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAPLE_LEAVES, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAPLE_SAPLING, RenderLayer.getCutout());
@@ -31,6 +33,12 @@ public class GarunixpansionClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUEBERRY_BUSH, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GHOST_PIPES, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PASSIONFLOWER, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_ROSE, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_ROSE_CROP, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CYAN_ROSE, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CYAN_ROSE_CROP, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BIRD_OF_PARADISE, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_ORCHID, RenderLayer.getCutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAPLE_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAHOE_LEAVES, RenderLayer.getCutout());
@@ -41,6 +49,9 @@ public class GarunixpansionClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRANGE_DOOR, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STRANGE_TRAPDOOR, RenderLayer.getCutout());
 
+		ParticleFactoryRegistry.getInstance().register(ModParticles.FIREFLY, Firefly.Factory::new);
+
+		// Block tinting
 		ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> {
 			if (world == null || pos == null) { return -1; }
 			return BiomeColors.getFoliageColor(world, pos); },
@@ -48,14 +59,9 @@ public class GarunixpansionClient implements ClientModInitializer {
 				ModBlocks.MOSSY_CALCITE_BRICKS,
 				ModBlocks.PASSIONFLOWER);
 
-		ParticleFactoryRegistry.getInstance().register(Garunixpansion.FIREFLY, Firefly.Factory::new);
-
 		EntityRendererRegistry.register(ModEntities.RED_CARDINAL, RedCardinalRenderer::new);
 
 		TerraformBoatClientHelper.registerModelLayers(ModBoats.MAHOE_BOAT_ID, false);
 		TerraformBoatClientHelper.registerModelLayers(ModBoats.MAHOE_CHEST_BOAT_ID, false);
-
-		//SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.STRANGE_SIGN_TEXTURE));
-		//SpriteIdentifierRegistry.INSTANCE.addIdentifier(new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE, ModBlocks.STRANGE_HANGING_SIGN_TEXTURE));
 	}
 }

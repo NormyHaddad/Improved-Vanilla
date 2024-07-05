@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "garunixpansion:red_rose"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "garunixpansion:blocks/red_rose"
+}

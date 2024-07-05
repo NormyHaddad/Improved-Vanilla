@@ -10,8 +10,8 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 
 public class ModBoats {
-    public static Identifier MAHOE_BOAT_ID = new Identifier(Garunixpansion.MOD_ID, "mahoe_boat");
-    public static Identifier MAHOE_CHEST_BOAT_ID = new Identifier(Garunixpansion.MOD_ID, "mahoe_chest_boat");
+    public static Identifier MAHOE_BOAT_ID = Identifier.of(Garunixpansion.MOD_ID, "mahoe_boat");
+    public static Identifier MAHOE_CHEST_BOAT_ID = Identifier.of(Garunixpansion.MOD_ID, "mahoe_chest_boat");
 
     public static final RegistryKey<TerraformBoatType> MAHOE_BOAT_KEY = TerraformBoatTypeRegistry.createKey(MAHOE_BOAT_ID);
     //public static final RegistryKey<TerraformBoatType> MAHOE_CHEST_BOAT_KEY = TerraformBoatTypeRegistry.createKey(MAHOE_CHEST_BOAT_ID);

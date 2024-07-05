@@ -7,11 +7,11 @@ import net.minecraft.util.Identifier;
 
 public class ModWoodType {
     public static final WoodType MAPLE = WoodTypeBuilder.copyOf(WoodType.CHERRY).register(
-            new Identifier(Garunixpansion.MOD_ID, "maple"), ModBlockSetType.MAPLE);
+            Identifier.of(Garunixpansion.MOD_ID, "maple"), ModBlockSetType.MAPLE);
     public static final WoodType MAHOE = WoodTypeBuilder.copyOf(WoodType.JUNGLE).register(
-            new Identifier(Garunixpansion.MOD_ID, "mahoe"), ModBlockSetType.MAHOE);
+            Identifier.of(Garunixpansion.MOD_ID, "mahoe"), ModBlockSetType.MAHOE);
     public static final WoodType STRANGE = WoodTypeBuilder.copyOf(WoodType.CRIMSON).register(
-            new Identifier(Garunixpansion.MOD_ID, "strange"), ModBlockSetType.STRANGE);
+            Identifier.of(Garunixpansion.MOD_ID, "strange"), ModBlockSetType.STRANGE);
 
     //public static final Set<WoodType> VALUES = new ObjectArraySet<WoodType>();
     //public static final WoodType MAPLE = register(new WoodType("acacia", BlockSetType.ACACIA));

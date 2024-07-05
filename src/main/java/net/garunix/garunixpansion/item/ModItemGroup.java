@@ -10,7 +10,7 @@ import static net.garunix.garunixpansion.Garunixpansion.MOD_ID;
 
 public class ModItemGroup {
     public static final RegistryKey<ItemGroup> GARUNIX = RegistryKey.of(RegistryKeys.ITEM_GROUP,
-            new Identifier(MOD_ID, "garunix"));
+            Identifier.of(MOD_ID, "garunix"));
 
     public void onInitialize() {
 

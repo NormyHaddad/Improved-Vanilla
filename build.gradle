@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.3-SNAPSHOT'
+	id 'fabric-loom' version '1.7-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -70,7 +70,6 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	include "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Uncomment the following line to enable the deprecated Fabric API modules. 
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
@@ -78,16 +77,16 @@ dependencies {
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 
 	// Terrablender for custom biomes
-	modImplementation 'com.github.glitchfiend:TerraBlender-fabric:1.20.1-3.0.0.169'
-	include 'com.github.glitchfiend:TerraBlender-fabric:1.20.1-3.0.0.169'
+	modImplementation 'com.github.glitchfiend:TerraBlender-fabric:1.21-4.0.0.1'
+	include 'com.github.glitchfiend:TerraBlender-fabric:1.21-4.0.0.1'
 
 	// Geckolib for custom mobs
-	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.20.1:4.2.2'
-	include 'software.bernie.geckolib:geckolib-fabric-1.20.1:4.2.2'
+	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.21:4.5.6'
+	include 'software.bernie.geckolib:geckolib-fabric-1.21:4.5.6'
 
 	// Terraform wood API for boats
-	modImplementation 'com.terraformersmc.terraform-api:terraform-wood-api-v1:7.0.1'
-	include 'com.terraformersmc.terraform-api:terraform-wood-api-v1:7.0.1'
+	modImplementation 'com.terraformersmc.terraform-api:terraform-wood-api-v1:11.0.0-alpha.1'
+	include 'com.terraformersmc.terraform-api:terraform-wood-api-v1:11.0.0-alpha.1'
 }
 
 processResources {
@@ -99,7 +98,7 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 17
+	it.options.release = 21
 }
 
 java {
@@ -108,8 +107,8 @@ java {
 	// If you remove this line, sources will not be generated.
 	withSourcesJar()
 
-	sourceCompatibility = JavaVersion.VERSION_17
-	targetCompatibility = JavaVersion.VERSION_17
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
 }
 
 jar {

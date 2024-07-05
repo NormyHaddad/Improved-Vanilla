@@ -23,6 +23,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> MEGA_MAPLE_KEY = registerKey("mega_maple");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MAHOE_KEY = registerKey("mahoe");
     public static final RegistryKey<ConfiguredFeature<?, ?>> STRANGE_KEY = registerKey("strange");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> FLOWER_JUNGLE_KEY = registerKey("flower_jungle");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PASSIONFLOWER_JUNGLE_TREE_KEY = registerKey("passionflower_jungle_tree");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
@@ -43,7 +45,7 @@ public class ModConfiguredFeatures {
     }
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
-        return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(Garunixpansion.MOD_ID, name));
+        return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(Garunixpansion.MOD_ID, name));
     }
 
     private static <FC extends FeatureConfig, F extends Feature<FC>> void register(

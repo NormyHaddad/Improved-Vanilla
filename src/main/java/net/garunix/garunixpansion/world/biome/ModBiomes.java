@@ -11,6 +11,6 @@ public class ModBiomes {
 
     private static RegistryKey<Biome> register(String name)
     {
-        return RegistryKey.of(RegistryKeys.BIOME, new Identifier(Garunixpansion.MOD_ID, name));
+        return RegistryKey.of(RegistryKeys.BIOME, Identifier.of(Garunixpansion.MOD_ID, name));
     }
 }

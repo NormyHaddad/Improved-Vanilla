@@ -1,6 +1,7 @@
 package net.garunix.garunixpansion.mixin;
 
 import net.garunix.garunixpansion.Garunixpansion;
+import net.garunix.garunixpansion.particle.ModParticles;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -31,7 +32,7 @@ public abstract class PitcherFireflies {
                     mutable.set(i + MathHelper.nextInt(random, -10, 10), j + random.nextInt(15), k + MathHelper.nextInt(random, -10, 10));
                     BlockState blockState = world.getBlockState(mutable);
                     if (blockState.isFullCube(world, mutable)) continue;
-                    world.addParticle(Garunixpansion.FIREFLY,
+                    world.addParticle(ModParticles.FIREFLY,
                             (double) mutable.getX() + random.nextDouble(), (double) mutable.getY() + random.nextDouble(), (double) mutable.getZ() + random.nextDouble(),
                             (random.nextDouble() / 2) - 0.25, (random.nextDouble() / 2) - 0.25, (random.nextDouble() / 2) - 0.25);
                 }

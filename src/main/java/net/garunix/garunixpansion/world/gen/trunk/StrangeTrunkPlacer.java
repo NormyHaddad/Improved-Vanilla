@@ -2,6 +2,7 @@ package net.garunix.garunixpansion.world.gen.trunk;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.math.BlockPos;
@@ -16,7 +17,7 @@ import java.util.List;
 import java.util.function.BiConsumer;
 
 public class StrangeTrunkPlacer extends TrunkPlacer {
-    public static final Codec<StrangeTrunkPlacer> CODEC = RecordCodecBuilder.create(instance ->
+    public static final MapCodec<StrangeTrunkPlacer> CODEC = RecordCodecBuilder.mapCodec(instance ->
             fillTrunkPlacerFields(instance).apply(instance, StrangeTrunkPlacer::new));
 
     public StrangeTrunkPlacer(int baseHeight, int firstRandomHeight, int secondRandomHeight) {

@@ -16,6 +16,8 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> MAPLE_PLACED_KEY = registerKey("maple_placed");
     public static final RegistryKey<PlacedFeature> MEGA_MAPLE_PLACED_KEY = registerKey("mega_maple_placed");
     public static final RegistryKey<PlacedFeature> MAHOE_PLACED_KEY = registerKey("mahoe_placed");
+    public static final RegistryKey<PlacedFeature> FLOWER_JUNGLE_PLACED_KEY = registerKey("flower_jungle_placed");
+    public static final RegistryKey<PlacedFeature> PASSIONFLOWER_JUNGLE_TREE_PLACED_KEY = registerKey("passionflower_jungle_tree_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -29,7 +31,7 @@ public class ModPlacedFeatures {
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
-        return RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Garunixpansion.MOD_ID, name));
+        return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(Garunixpansion.MOD_ID, name));
     }
 
     private static void register(Registerable<PlacedFeature> context, RegistryKey<PlacedFeature> key,

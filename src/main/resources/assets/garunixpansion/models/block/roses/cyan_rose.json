@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "garunixpansion:block/rose/cyan_rose"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "garunixpansion:block/roses/rose_crop_stage0"
+    },
+    "age=1": {
+      "model": "garunixpansion:block/roses/rose_crop_stage1"
+    },
+    "age=2": {
+      "model": "garunixpansion:block/roses/rose_crop_stage2"
+    }
+  }
+}
