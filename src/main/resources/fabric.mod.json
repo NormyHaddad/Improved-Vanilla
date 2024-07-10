@@ -4,6 +4,7 @@
 	"version": "${version}",
 	"name": "Garunixpansion",
 	"description": "This is an example description! Tell everyone what your mod is about!",
+	"accessWidener" : "garunixpansion.accesswidener",
 	"authors": [
 		"Garunix"
 	],

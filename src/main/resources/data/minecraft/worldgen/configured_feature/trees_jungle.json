@@ -12,12 +12,16 @@
         "feature": "minecraft:jungle_bush"
       },
       {
-        "chance": 0.33333334,
+        "chance": 0.23333334,
         "feature": "minecraft:mega_jungle_tree_checked"
       },
       {
-        "chance": 0.5,
+        "chance": 0.25,
         "feature": "garunixpansion:passionflower_jungle_tree_placed"
+      },
+      {
+        "chance": 0.1,
+        "feature": "garunixpansion:passionflower_mega_jungle_tree_placed"
       }
     ]
   }

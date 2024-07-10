@@ -25,6 +25,10 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> STRANGE_KEY = registerKey("strange");
     public static final RegistryKey<ConfiguredFeature<?, ?>> FLOWER_JUNGLE_KEY = registerKey("flower_jungle");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PASSIONFLOWER_JUNGLE_TREE_KEY = registerKey("passionflower_jungle_tree");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PASSIONFLOWER_MEGA_JUNGLE_TREE_KEY = registerKey("passionflower_mega_jungle_tree");
+    
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DARK_FOREST_MUSHROOM_PATCH_KEY = registerKey("dark_forest_mushroom_patch");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DARK_FOREST_FLOWER_PATCH_KEY = registerKey("dark_forest_flower_patch");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 

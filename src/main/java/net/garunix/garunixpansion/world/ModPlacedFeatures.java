@@ -18,6 +18,10 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> MAHOE_PLACED_KEY = registerKey("mahoe_placed");
     public static final RegistryKey<PlacedFeature> FLOWER_JUNGLE_PLACED_KEY = registerKey("flower_jungle_placed");
     public static final RegistryKey<PlacedFeature> PASSIONFLOWER_JUNGLE_TREE_PLACED_KEY = registerKey("passionflower_jungle_tree_placed");
+    public static final RegistryKey<PlacedFeature> PASSIONFLOWER_MEGA_JUNGLE_TREE_PLACED_KEY = registerKey("passionflower_mega_jungle_tree_placed");
+
+    public static final RegistryKey<PlacedFeature> DARK_FOREST_MUSHROOM_PATCH_PLACED_KEY = registerKey("dark_forest_mushroom_patch_placed");
+    public static final RegistryKey<PlacedFeature> DARK_FOREST_FLOWER_PATCH_PLACED_KEY = registerKey("dark_forest_flower_patch_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);

@@ -78,16 +78,6 @@ public class Garunixpansion implements ModInitializer, TerraBlenderApi {
 
 		RegistryKey<LootTable> SNIFFER_LOOT_TABLE_ID = LootTables.SNIFFER_DIGGING_GAMEPLAY;
 
-//		LootTableEvents.MODIFY.register((key, tableBuilder, source) -> {
-//			if (source.isBuiltin() && SNIFFER_LOOT_TABLE_ID.equals(key)) {
-//				LootPool.Builder poolBuilder = LootPool.builder()
-//						.with(ItemEntry.builder(Items.TORCHFLOWER_SEEDS).weight(3))
-//						.with(ItemEntry.builder(Items.PITCHER_POD).weight(3))
-//						.with(ItemEntry.builder(ModItems.RED_ROSE_SEEDS).weight(2))
-//						.with(ItemEntry.builder(ModItems.CYAN_ROSE_SEEDS).weight(1));
-//				};
-//			}
-//		);
 		LootTableEvents.MODIFY.register((key, tableBuilder, source) -> {
 					if (source.isBuiltin() && SNIFFER_LOOT_TABLE_ID.equals(key)) {
 						tableBuilder.modifyPools(poolBuilder -> {

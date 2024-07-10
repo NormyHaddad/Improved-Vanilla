@@ -1,0 +1,5 @@
+accessWidener v2 named
+
+#accessible field net/minecraft/world/gen/treedecorator/TreeDecorator$Generator replacer Ljava/util/function/BiConsumer;
+extendable class net/minecraft/world/gen/treedecorator/TreeDecorator$Generator
+accessible field net/minecraft/world/gen/treedecorator/LeavesVineTreeDecorator probability F
