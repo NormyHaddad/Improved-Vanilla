@@ -1,21 +1,13 @@
 package net.garunix.garunixpansion.world.gen.treedecorator;
 
 import com.mojang.serialization.MapCodec;
-import com.sun.source.tree.Tree;
 import net.garunix.garunixpansion.block.ModBlocks;
-import net.garunix.garunixpansion.world.ModTreeGen;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
+import net.garunix.garunixpansion.world.gen.ModTreeGeneration;
 import net.minecraft.block.VineBlock;
-import net.minecraft.state.property.BooleanProperty;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
-import net.minecraft.world.TestableWorld;
 import net.minecraft.world.gen.treedecorator.TreeDecorator;
 import net.minecraft.world.gen.treedecorator.TreeDecoratorType;
-
-import java.util.Set;
-import java.util.function.BiConsumer;
 
 public class PassionflowerTrunkDecorator extends TreeDecorator {
     public static final PassionflowerTrunkDecorator INSTANCE = new PassionflowerTrunkDecorator();
@@ -25,7 +17,7 @@ public class PassionflowerTrunkDecorator extends TreeDecorator {
     });
 
     protected TreeDecoratorType<?> getType() {
-        return ModTreeGen.PASSIONFLOWER_TRUNK_DECORATOR;
+        return ModTreeGeneration.PASSIONFLOWER_TRUNK_DECORATOR;
     }
 
     public void generate(TreeDecorator.Generator generator) {

@@ -11,6 +11,7 @@ import net.minecraft.world.biome.BiomeKeys;
 import java.util.Optional;
 
 public abstract class ModWorldGeneration implements BiomeModificationContext.EffectsContext {
+
     public static void generateModWorldGen() {
         ModTreeGeneration.generateTrees();
     }

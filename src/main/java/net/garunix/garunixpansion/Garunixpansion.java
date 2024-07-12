@@ -15,7 +15,6 @@ import net.garunix.garunixpansion.entity.ModEntities;
 import net.garunix.garunixpansion.entity.custom.RedCardinalEntity;
 import net.garunix.garunixpansion.item.ModItems;
 import net.garunix.garunixpansion.particle.ModParticles;
-import net.garunix.garunixpansion.world.ModTreeGen;
 import net.garunix.garunixpansion.world.biome.ModRegion1;
 import net.garunix.garunixpansion.world.gen.ModWorldGeneration;
 import net.garunix.garunixpansion.world.gen.trunk.ModTrunkPlacerType;
@@ -57,7 +56,6 @@ public class Garunixpansion implements ModInitializer, TerraBlenderApi {
 		ModTrunkPlacerType.init();
 		ModWorldGeneration.init();
 		ModWorldGeneration.generateModWorldGen();
-		ModTreeGen.init();
 
 		var savannaModifier = BiomeModifications.create(Identifier.of(Garunixpansion.MOD_ID, "savanna_modifier"));
 		var ctx = BiomeSelectors.includeByKey(BiomeKeys.WINDSWEPT_SAVANNA);

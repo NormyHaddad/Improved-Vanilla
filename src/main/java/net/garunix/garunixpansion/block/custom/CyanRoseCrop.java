@@ -10,8 +10,8 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 
 public class CyanRoseCrop extends CropBlock {
-    public static final int MAX_AGE = 5;
-    public static final IntProperty AGE =  IntProperty.of("age", 0, 5);
+    public static final int MAX_AGE = 3;
+    public static final IntProperty AGE =  IntProperty.of("age", 0, 3);
 
     public CyanRoseCrop(Settings settings) {
         super(settings);

@@ -11,10 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "garunixpansion:ghost_pipes"
+          "name": "garunixpansion:jack_in_the_pulpit"
         }
       ],
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "garunixpansion:jack_in_the_pulpit"
 }

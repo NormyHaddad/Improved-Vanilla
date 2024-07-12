@@ -11,10 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "garunixpansion:glacier_lily"
+          "name": "garunixpansion:ghost_pipes"
         }
       ],
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "garunixpansion:ghost_pipes"
 }

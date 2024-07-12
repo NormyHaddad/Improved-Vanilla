@@ -11,10 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "garunixpansion:jack_in_the_pulpit"
+          "name": "garunixpansion:glacier_lily"
         }
       ],
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "garunixpansion:glacier_lily"
 }

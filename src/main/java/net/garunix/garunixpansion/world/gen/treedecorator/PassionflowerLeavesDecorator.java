@@ -2,8 +2,7 @@ package net.garunix.garunixpansion.world.gen.treedecorator;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
-import net.garunix.garunixpansion.block.ModBlocks;
-import net.garunix.garunixpansion.world.ModTreeGen;
+import net.garunix.garunixpansion.world.gen.ModTreeGeneration;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.VineBlock;
@@ -21,7 +20,7 @@ public class PassionflowerLeavesDecorator extends TreeDecorator {
 
     @Override
     protected TreeDecoratorType<?> getType() {
-        return ModTreeGen.PASSIONFLOWER_LEAVES_DECORATOR;
+        return ModTreeGeneration.PASSIONFLOWER_LEAVES_DECORATOR;
     }
 
     public PassionflowerLeavesDecorator(float probability) {
