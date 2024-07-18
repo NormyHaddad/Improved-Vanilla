@@ -6,6 +6,10 @@ import net.garunix.garunixpansion.Garunixpansion;
 import net.garunix.garunixpansion.block.ModBlocks;
 import net.garunix.garunixpansion.entity.ModBoats;
 import net.garunix.garunixpansion.entity.ModEntities;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.LilyPadBlock;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registries;
@@ -46,6 +50,13 @@ public class ModItems {
     public static final Item CYAN_ROSE_SEEDS = registerItem("cyan_rose_seeds",
             new AliasedBlockItem(ModBlocks.CYAN_ROSE_CROP, new Item.Settings()));
 
+    public static final Item PINK_LOTUS = registerItem("pink_lotus",
+            new PlaceableOnWaterItem(ModBlocks.PINK_LOTUS, new Item.Settings()));
+    public static final Item RED_LOTUS = registerItem("red_lotus",
+            new PlaceableOnWaterItem(ModBlocks.RED_LOTUS, new Item.Settings()));
+    public static final Item TARO = registerItem("taro",
+            new AliasedBlockItem(ModBlocks.TARO_CROP, new Item.Settings().food(ModFoodComponents.TARO)));
+
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(Garunixpansion.MOD_ID, name), item);
     }
@@ -61,10 +72,14 @@ public class ModItems {
             content.addAfter(Items.CHERRY_HANGING_SIGN, MAPLE_SIGN);
             content.addAfter(Items.CHERRY_HANGING_SIGN, STRANGE_HANGING_SIGN);
             content.addAfter(Items.CHERRY_HANGING_SIGN, STRANGE_SIGN);
+            content.add(RED_CARDINAL_SPAWN_EGG);
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(content -> {
             content.add(RED_ROSE_SEEDS);
             content.add(CYAN_ROSE_SEEDS);
+            content.add(TARO);
+            content.add(PINK_LOTUS);
+            content.add(RED_LOTUS);
         });
     }
 

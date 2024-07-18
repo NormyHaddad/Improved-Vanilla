@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "garunixpansion:block/red_lotus"
+      },
+      {
+        "model": "garunixpansion:block/red_lotus",
+        "y": 90
+      },
+      {
+        "model": "garunixpansion:block/red_lotus",
+        "y": 180
+      },
+      {
+        "model": "garunixpansion:block/red_lotus",
+        "y": 270
+      }
+    ]
+  }
+}

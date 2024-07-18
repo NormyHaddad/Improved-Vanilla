@@ -9,6 +9,7 @@
   "item.garunixpansion.blueberries": "Blueberries",
   "item.garunixpansion.red_rose_seeds": "Red Rose Seeds",
   "item.garunixpansion.cyan_rose_seeds": "Cyan Rose Seeds",
+  "item.garunixpansion.taro": "Taro",
 
   "block.garunixpansion.glow_blue_wool": "Glowing Blue Wool",
   "block.garunixpansion.glow_brown_wool": "Glowing Brown Wool",
@@ -58,6 +59,10 @@
   "block.garunixpansion.cyan_rose": "Cyan Rose",
   "block.garunixpansion.pink_orchid": "Pink orchid",
   "block.garunixpansion.bird_of_paradise": "Bird of Paradise",
+  "block.garunixpansion.jack_in_the_pulpit": "Jack-in-the-pulpit",
+  "block.garunixpansion.taro_plant": "Taro Plant",
+  "block.garunixpansion.pink_lotus": "Pink Lotus",
+  "block.garunixpansion.red_lotus": "Red Lotus",
 
   "block.garunixpansion.mahoe_log": "Mahoe Log",
   "block.garunixpansion.stripped_mahoe_log": "Stripped Mahoe Log",

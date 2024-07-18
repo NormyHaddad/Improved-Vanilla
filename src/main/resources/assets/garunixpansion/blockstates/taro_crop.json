@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "garunixpansion:block/taro/taro_stage0"
+    },
+    "age=1": {
+      "model": "garunixpansion:block/taro/taro_stage0"
+    },
+    "age=2": {
+      "model": "garunixpansion:block/taro/taro_stage1"
+    },
+    "age=3": {
+      "model": "garunixpansion:block/taro/taro_stage1"
+    },
+    "age=4": {
+      "model": "garunixpansion:block/taro/taro_stage2"
+    },
+    "age=5": {
+      "model": "garunixpansion:block/taro/taro_stage2"
+    },
+    "age=6": {
+      "model": "garunixpansion:block/taro/taro_stage2"
+    },
+    "age=7": {
+      "model": "garunixpansion:block/taro/taro_plant"
+    }
+  }
+}

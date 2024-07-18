@@ -220,18 +220,26 @@ public class ModBlocks {
     public static final Block CYAN_ROSE = registerBlock("cyan_rose",
             new FlowerBlock(StatusEffects.NIGHT_VISION, 5, AbstractBlock.Settings.copy(Blocks.POPPY)
                     .mapColor(MapColor.DARK_GREEN)), ItemGroups.NATURAL);
-    public static final Block RED_ROSE_CROP = registerBlock("red_rose_crop",
+    public static final Block RED_ROSE_CROP = registerItemlessBlock("red_rose_crop",
             new OldRoseCrop(AbstractBlock.Settings.copy(Blocks.TORCHFLOWER_CROP)
-                    .mapColor(MapColor.DARK_GREEN)), ItemGroups.SEARCH);
-    public static final Block CYAN_ROSE_CROP = registerBlock("cyan_rose_crop",
+                    .mapColor(MapColor.DARK_GREEN)));
+    public static final Block CYAN_ROSE_CROP = registerItemlessBlock("cyan_rose_crop",
             new CyanRoseCrop(AbstractBlock.Settings.copy(Blocks.TORCHFLOWER_CROP)
-                    .mapColor(MapColor.DARK_GREEN)), ItemGroups.SEARCH);
+                    .mapColor(MapColor.DARK_GREEN)));
     public static final Block BIRD_OF_PARADISE = registerBlock("bird_of_paradise",
             new TallFlowerBlock(AbstractBlock.Settings.copy(Blocks.ROSE_BUSH)), ItemGroups.NATURAL);
     public static final Block PINK_ORCHID = registerBlock("pink_orchid",
             new FlowerBlock(StatusEffects.SATURATION, 5, AbstractBlock.Settings.copy(Blocks.BLUE_ORCHID)), ItemGroups.NATURAL);
     public static final Block JACK_IN_THE_PULPIT = registerBlock("jack_in_the_pulpit",
             new FlowerBlock(StatusEffects.BLINDNESS, 9, AbstractBlock.Settings.copy(Blocks.LILY_OF_THE_VALLEY)), ItemGroups.NATURAL);
+    public static final Block TARO_CROP = registerItemlessBlock("taro_crop",
+            new CropBlock(AbstractBlock.Settings.copy(Blocks.POTATOES)));
+    public static final Block TARO_PLANT = registerBlock("taro_plant",
+            new ShortPlantBlock(AbstractBlock.Settings.copy(Blocks.SHORT_GRASS)), ItemGroups.NATURAL);
+    public static final Block PINK_LOTUS = Registry.register(Registries.BLOCK, Identifier.of(Garunixpansion.MOD_ID, "pink_lotus"),
+            new LilyPadBlock(AbstractBlock.Settings.copy(Blocks.LILY_PAD)));
+    public static final Block RED_LOTUS = Registry.register(Registries.BLOCK, Identifier.of(Garunixpansion.MOD_ID, "red_lotus"),
+            new LilyPadBlock(AbstractBlock.Settings.copy(Blocks.LILY_PAD)));
     //endregion
 
     //region Glowing wool blocks
