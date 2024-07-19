@@ -240,6 +240,8 @@ public class ModBlocks {
             new LilyPadBlock(AbstractBlock.Settings.copy(Blocks.LILY_PAD)));
     public static final Block RED_LOTUS = Registry.register(Registries.BLOCK, Identifier.of(Garunixpansion.MOD_ID, "red_lotus"),
             new LilyPadBlock(AbstractBlock.Settings.copy(Blocks.LILY_PAD)));
+    public static final Block BLUE_IRIS = registerBlock("blue_iris",
+            new FlowerBlock(StatusEffects.WATER_BREATHING, 11, AbstractBlock.Settings.copy(Blocks.BLUE_ORCHID)), ItemGroups.NATURAL);
     //endregion
 
     //region Glowing wool blocks
@@ -310,6 +312,12 @@ public class ModBlocks {
 
     public static void orderItems() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(content -> {
+            content.addAfter(Items.CHERRY_BUTTON, STRANGE_BUTTON);
+            content.addAfter(Items.CHERRY_BUTTON, STRANGE_PRESSURE_PLATE);
+            content.addAfter(Items.CHERRY_BUTTON, STRANGE_TRAPDOOR);
+            content.addAfter(Items.CHERRY_BUTTON, STRANGE_DOOR);
+            content.addAfter(Items.CHERRY_BUTTON, STRANGE_FENCE_GATE);
+            content.addAfter(Items.CHERRY_BUTTON, STRANGE_FENCE);
             content.addAfter(Items.CHERRY_BUTTON, STRANGE_SLAB);
             content.addAfter(Items.CHERRY_BUTTON, STRANGE_STAIRS);
             content.addAfter(Items.CHERRY_BUTTON, STRANGE_PLANKS);

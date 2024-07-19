@@ -8,26 +8,20 @@
           "to_place": {
             "type": "minecraft:noise_threshold_provider",
             "default_state": {
-              "Name": "minecraft:allium"
+              "Name": "garunixpansion:blue_iris"
             },
-            "high_chance": 0,
+            "high_chance": 0.2,
             "high_states": [
               {
-                "Name": "minecraft:dandelion"
+                "Name": "minecraft:blue_orchid"
               },
               {
-                "Name": "minecraft:poppy"
-              },
-              {
-                "Name": "garunixpansion:pink_orchid"
+                "Name": "garunixpansion:blue_iris"
               }
             ],
             "low_states": [
               {
-                "Name": "minecraft:dandelion"
-              },
-              {
-                "Name": "garunixpansion:bird_of_paradise"
+                "Name": "minecraft:blue_orchid"
               }
             ],
             "noise": {
@@ -38,7 +32,7 @@
             },
             "scale": 0.005,
             "seed": 2534,
-            "threshold": -0.4
+            "threshold": -0.2
           }
         }
       },
