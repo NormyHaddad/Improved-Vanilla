@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.garunix.garunixpansion.Garunixpansion;
 import net.garunix.garunixpansion.block.custom.BlueberryBush;
 import net.garunix.garunixpansion.block.custom.CyanRoseCrop;
+import net.garunix.garunixpansion.block.custom.GroundCoverBlock;
 import net.garunix.garunixpansion.block.custom.OldRoseCrop;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffects;
@@ -197,7 +198,7 @@ public class ModBlocks {
 
     //region Custom Plants
     public static final Block BUNCHBERRY_FLOWER = registerBlock("bunchberry_flower",
-            new FlowerbedBlock(AbstractBlock.Settings.copy(Blocks.PINK_PETALS).mapColor(MapColor.TERRACOTTA_WHITE)),
+            new GroundCoverBlock(AbstractBlock.Settings.copy(Blocks.PINK_PETALS).mapColor(MapColor.TERRACOTTA_WHITE)),
             ItemGroups.NATURAL);
     public static final Block GLACIER_LILY = registerBlock("glacier_lily",
             new FlowerBlock(StatusEffects.SATURATION, 10, AbstractBlock.Settings.copy(Blocks.LILY_OF_THE_VALLEY)
@@ -242,6 +243,10 @@ public class ModBlocks {
             new LilyPadBlock(AbstractBlock.Settings.copy(Blocks.LILY_PAD)));
     public static final Block BLUE_IRIS = registerBlock("blue_iris",
             new FlowerBlock(StatusEffects.WATER_BREATHING, 11, AbstractBlock.Settings.copy(Blocks.BLUE_ORCHID)), ItemGroups.NATURAL);
+    public static final Block SEA_LAVENDER = registerBlock("sea_lavender",
+            new FlowerBlock(StatusEffects.CONDUIT_POWER, 5, AbstractBlock.Settings.copy(Blocks.BLUE_ORCHID)), ItemGroups.NATURAL);
+    public static final Block SWAMPFLOWER = registerBlock("swampflower",
+            new GroundCoverBlock(AbstractBlock.Settings.copy(Blocks.PINK_PETALS)), ItemGroups.NATURAL);
     //endregion
 
     //region Glowing wool blocks

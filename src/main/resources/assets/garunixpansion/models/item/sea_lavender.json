@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "garunixpansion:item/bunchberry"
+    "layer0": "garunixpansion:block/sea_lavender"
   }
 }

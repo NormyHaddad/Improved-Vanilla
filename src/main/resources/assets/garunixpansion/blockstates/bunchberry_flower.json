@@ -1,5 +1,21 @@
 {
   "variants": {
-    "": { "model": "garunixpansion:block/bunchberry_flower" }
+    "": [
+      {
+        "model": "garunixpansion:block/bunchberry_flower"
+      },
+      {
+        "model": "garunixpansion:block/bunchberry_flower",
+        "y": 90
+      },
+      {
+        "model": "garunixpansion:block/bunchberry_flower",
+        "y": 180
+      },
+      {
+        "model": "garunixpansion:block/bunchberry_flower",
+        "y": 270
+      }
+    ]
   }
 }

@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "garunixpansion:block/swampflower",
+        "x": 90
+      },
+      {
+        "model": "garunixpansion:block/swampflower",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "garunixpansion:block/swampflower",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "garunixpansion:block/swampflower",
+        "x": 90,
+        "y": 270
+      }
+    ]
+  }
+}

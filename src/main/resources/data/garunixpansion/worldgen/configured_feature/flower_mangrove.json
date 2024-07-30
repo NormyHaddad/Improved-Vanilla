@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:flower",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:noise_threshold_provider",
+            "default_state": {
+              "Name": "garunixpansion:sea_lavender"
+            },
+            "high_chance": 0.2,
+            "high_states": [
+              {
+                "Name": "garunixpansion:swampflower"
+              },
+              {
+                "Name": "garunixpansion:sea_lavender"
+              }
+            ],
+            "low_states": [
+              {
+                "Name": "garunixpansion:swampflower"
+              }
+            ],
+            "noise": {
+              "amplitudes": [
+                1.0
+              ],
+              "firstOctave": 0
+            },
+            "scale": 0.005,
+            "seed": 2534,
+            "threshold": -0.2
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    },
+    "tries": 96,
+    "xz_spread": 12,
+    "y_spread": 4
+  }
+}
