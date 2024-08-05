@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "garunixpansion:block/black_eyed_daisy"
+  }
+}

@@ -31,11 +31,5 @@ public class ModTreeGeneration {
                 ModPlacedFeatures.FLOWER_JUNGLE_PLACED_KEY);
 
         // For testing purposes
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS), GenerationStep.Feature.VEGETAL_DECORATION,
-                ModPlacedFeatures.PASSIONFLOWER_JUNGLE_TREE_PLACED_KEY);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS), GenerationStep.Feature.VEGETAL_DECORATION,
-                ModPlacedFeatures.PASSIONFLOWER_MEGA_JUNGLE_TREE_PLACED_KEY);
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS), GenerationStep.Feature.VEGETAL_DECORATION,
-                ModPlacedFeatures.FLOWER_JUNGLE_PLACED_KEY);
     }
 }

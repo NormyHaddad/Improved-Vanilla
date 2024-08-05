@@ -1,7 +1,6 @@
 package net.garunix.garunixpansion.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.garunix.garunixpansion.Garunixpansion;
 import net.garunix.garunixpansion.block.custom.BlueberryBush;
 import net.garunix.garunixpansion.block.custom.CyanRoseCrop;
@@ -14,8 +13,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
-
-import java.util.function.ToIntFunction;
 
 public class ModBlocks {
     //region Maple Blocks
@@ -247,6 +244,10 @@ public class ModBlocks {
             new FlowerBlock(StatusEffects.CONDUIT_POWER, 5, AbstractBlock.Settings.copy(Blocks.BLUE_ORCHID)), ItemGroups.NATURAL);
     public static final Block SWAMPFLOWER = registerBlock("swampflower",
             new GroundCoverBlock(AbstractBlock.Settings.copy(Blocks.PINK_PETALS)), ItemGroups.NATURAL);
+    public static final Block CONEFLOWER = registerBlock("coneflower",
+            new FlowerBlock(StatusEffects.HASTE, 7.0f, AbstractBlock.Settings.copy(Blocks.DANDELION)), ItemGroups.NATURAL);
+    public static final Block BLACK_EYED_DAISY = registerBlock("black_eyed_daisy",
+            new FlowerBlock(StatusEffects.REGENERATION, 9.0f, AbstractBlock.Settings.copy(Blocks.OXEYE_DAISY)), ItemGroups.NATURAL);
     //endregion
 
     //region Glowing wool blocks
