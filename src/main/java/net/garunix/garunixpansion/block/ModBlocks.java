@@ -1,6 +1,7 @@
 package net.garunix.garunixpansion.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.garunix.garunixpansion.Garunixpansion;
 import net.garunix.garunixpansion.block.custom.BlueberryBush;
 import net.garunix.garunixpansion.block.custom.CyanRoseCrop;
@@ -116,8 +117,8 @@ public class ModBlocks {
     //region Stem/foliage
     public static final Block STRANGE_STEM = registerBlock("strange_stem", new MushroomBlock(
             AbstractBlock.Settings.copy(Blocks.CRIMSON_STEM).mapColor(MapColor.PURPLE)), ItemGroups.NATURAL);
-    public static final Block STRANGE_LEAVES = registerBlock("strange_leaves", new Block(
-            AbstractBlock.Settings.copy(Blocks.NETHER_WART_BLOCK).mapColor(MapColor.LICHEN_GREEN)), ItemGroups.NATURAL);
+    public static final Block STRANGE_LEAVES = registerBlock("strange_leaves", new TranslucentBlock(
+            AbstractBlock.Settings.copy(Blocks.GLASS).mapColor(MapColor.TERRACOTTA_CYAN)), ItemGroups.NATURAL);
     //endregion
 
     //region Planks & variants
@@ -248,6 +249,17 @@ public class ModBlocks {
             new FlowerBlock(StatusEffects.HASTE, 7.0f, AbstractBlock.Settings.copy(Blocks.DANDELION)), ItemGroups.NATURAL);
     public static final Block BLACK_EYED_DAISY = registerBlock("black_eyed_daisy",
             new FlowerBlock(StatusEffects.REGENERATION, 9.0f, AbstractBlock.Settings.copy(Blocks.OXEYE_DAISY)), ItemGroups.NATURAL);
+    public static final Block BLUE_EYED_DAISY = registerBlock("blue_eyed_daisy",
+            new FlowerBlock(StatusEffects.INSTANT_DAMAGE, 1.0f, AbstractBlock.Settings.copy(Blocks.OXEYE_DAISY)), ItemGroups.NATURAL);
+    public static final Block BLUE_BUSH_DAISY = registerBlock("blue_bush_daisy",
+            new FlowerBlock(StatusEffects.HASTE, 14.0f, AbstractBlock.Settings.copy(Blocks.AZURE_BLUET)), ItemGroups.NATURAL);
+    public static final Block SAVANNA_BLOOM = registerBlock("savanna_bloom",
+            new FlowerBlock(StatusEffects.INSTANT_HEALTH, 2.0f, AbstractBlock.Settings.copy(Blocks.ALLIUM)), ItemGroups.NATURAL);
+    //endregion
+
+    //region Potted plants
+    public static final Block POTTED_GLACIER_LILY = Registry.register(Registries.BLOCK, Identifier.of(Garunixpansion.MOD_ID, "potted_glacier_lily"),
+            new FlowerPotBlock(GLACIER_LILY, AbstractBlock.Settings.copy(Blocks.POTTED_LILY_OF_THE_VALLEY)));
     //endregion
 
     //region Glowing wool blocks
