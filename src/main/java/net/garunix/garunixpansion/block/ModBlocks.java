@@ -255,11 +255,31 @@ public class ModBlocks {
             new FlowerBlock(StatusEffects.HASTE, 14.0f, AbstractBlock.Settings.copy(Blocks.AZURE_BLUET)), ItemGroups.NATURAL);
     public static final Block SAVANNA_BLOOM = registerBlock("savanna_bloom",
             new FlowerBlock(StatusEffects.INSTANT_HEALTH, 2.0f, AbstractBlock.Settings.copy(Blocks.ALLIUM)), ItemGroups.NATURAL);
+    public static final Block SNOWY_LUPINE = registerBlock("snowy_lupine",
+            new TallFlowerBlock(AbstractBlock.Settings.copy(Blocks.LILAC)), ItemGroups.NATURAL);
+    public static final Block TWINFLOWER = registerBlock("twinflower",
+            new FlowerBlock(StatusEffects.HEALTH_BOOST, 3.0f, AbstractBlock.Settings.copy(Blocks.PINK_TULIP)), ItemGroups.NATURAL);
+    public static final Block BLUEBELL = registerBlock("bluebell",
+            new FlowerBlock(StatusEffects.INVISIBILITY, 12.0f, AbstractBlock.Settings.copy(Blocks.LILY_OF_THE_VALLEY)), ItemGroups.NATURAL);
+    public static final Block GREEN_ORCHID = registerBlock("green_orchid",
+            new FlowerBlock(StatusEffects.BLINDNESS, 8.0f, AbstractBlock.Settings.copy(Blocks.BLUE_ORCHID)), ItemGroups.NATURAL);
+    public static final Block WOOD_LILY = registerBlock("wood_lily",
+            new FlowerBlock(StatusEffects.ABSORPTION, 1.0f, AbstractBlock.Settings.copy(Blocks.ALLIUM)), ItemGroups.NATURAL);
+    public static final Block TONGUE_FERN = registerBlock("tongue_fern",
+            new ShortPlantBlock(AbstractBlock.Settings.copy(Blocks.FERN)), ItemGroups.NATURAL);
     //endregion
 
     //region Potted plants
     public static final Block POTTED_GLACIER_LILY = Registry.register(Registries.BLOCK, Identifier.of(Garunixpansion.MOD_ID, "potted_glacier_lily"),
             new FlowerPotBlock(GLACIER_LILY, AbstractBlock.Settings.copy(Blocks.POTTED_LILY_OF_THE_VALLEY)));
+    public static final Block POTTED_TWINFLOWER = Registry.register(Registries.BLOCK, Identifier.of(Garunixpansion.MOD_ID, "potted_twinflower"),
+            new FlowerPotBlock(TWINFLOWER, AbstractBlock.Settings.copy(Blocks.POTTED_PINK_TULIP)));
+    public static final Block POTTED_BLUEBELL = Registry.register(Registries.BLOCK, Identifier.of(Garunixpansion.MOD_ID, "potted_bluebell"),
+            new FlowerPotBlock(BLUEBELL, AbstractBlock.Settings.copy(Blocks.POTTED_LILY_OF_THE_VALLEY)));
+    public static final Block POTTED_GREEN_ORCHID = Registry.register(Registries.BLOCK, Identifier.of(Garunixpansion.MOD_ID, "potted_green_orchid"),
+            new FlowerPotBlock(GREEN_ORCHID, AbstractBlock.Settings.copy(Blocks.POTTED_BLUE_ORCHID)));
+    public static final Block POTTED_WOOD_LILY = Registry.register(Registries.BLOCK, Identifier.of(Garunixpansion.MOD_ID, "potted_wood_lily"),
+            new FlowerPotBlock(WOOD_LILY, AbstractBlock.Settings.copy(Blocks.POTTED_ALLIUM)));
     //endregion
 
     //region Glowing wool blocks

@@ -8,26 +8,20 @@
           "to_place": {
             "type": "minecraft:noise_threshold_provider",
             "default_state": {
-              "Name": "garunixpansion:blue_bush_daisy"
+              "Name": "garunixpansion:twinflower"
             },
-            "high_chance": 0.5,
+            "high_chance": 0.3,
             "high_states": [
               {
-                "Name": "garunixpansion:blue_eyed_daisy"
-              },
-              {
-                "Name": "garunixpansion:savanna_bloom"
+                "Name": "garunixpansion:snowy_lupine"
               }
             ],
             "low_states": [
               {
-                "Name": "garunixpansion:blue_eyed_daisy"
+                "Name": "garunixpansion:twinflower"
               },
               {
-                "Name": "garunixpansion:savanna_bloom"
-              },
-              {
-                "Name": "garunixpansion:blue_bush_daisy"
+                "Name": "garunixpansion:snowy_lupine"
               }
             ],
             "noise": {
@@ -38,7 +32,7 @@
             },
             "scale": 0.005,
             "seed": 2534,
-            "threshold": -0.5
+            "threshold": -0.2
           }
         }
       },
