@@ -1,19 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#$#",
-    "###"
-  ],
-  "key": {
-    "#": {
-      "item": "garunixpansion:mahoe_planks"
-    },
-    "$": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:chest"
+    },
+    {
+      "item": "garunixpansion:mahoe_boat"
     }
-  },
+  ],
   "result": {
-    "item": "garunixpansion:mahoe_chest_boat",
+    "id": "garunixpansion:mahoe_chest_boat",
     "count": 1
   }
 }

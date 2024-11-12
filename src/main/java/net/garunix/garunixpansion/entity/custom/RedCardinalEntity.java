@@ -41,7 +41,7 @@ public class RedCardinalEntity extends AnimalEntity implements GeoEntity, Flutte
     public RedCardinalEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
         this.world = world;
-        this.moveControl = new FlightMoveControl(this, 10, false);
+        this.moveControl = new FlightMoveControl(this, 20, false);
         this.setPathfindingPenalty(PathNodeType.DANGER_FIRE, -1.0f);
         this.setPathfindingPenalty(PathNodeType.DAMAGE_FIRE, -1.0f);
     }
@@ -49,18 +49,18 @@ public class RedCardinalEntity extends AnimalEntity implements GeoEntity, Flutte
     public static DefaultAttributeContainer.Builder setAttributes() {
         return AnimalEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 8.0D)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.3f)
-                .add(EntityAttributes.GENERIC_FLYING_SPEED, 0.6f);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.4f)
+                .add(EntityAttributes.GENERIC_FLYING_SPEED, 1.2f);
     }
 
     Random rand = new Random();
 
     @Override
     protected void initGoals() {
-        this.goalSelector.add(0, new EscapeDangerGoal(this, 1.25));
+        this.goalSelector.add(0, new EscapeDangerGoal(this, 1.5));
         this.goalSelector.add(1, new SwimGoal(this));
         this.goalSelector.add(2, new FlyOntoTreeGoal(this, 1.0));
-        this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
+        this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 32.0f));
         this.goalSelector.add(4, new FollowMobGoal(this, 1.0, 3.0f, 7.0f));
 
         //this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
@@ -92,7 +92,7 @@ public class RedCardinalEntity extends AnimalEntity implements GeoEntity, Flutte
                     "animation.red_cardinal.fly"));
             return PlayState.CONTINUE;
         }
-        else if (!isOnGround() && this.getVelocity().y <= -0.1f) {
+        else if (!isOnGround() && this.getVelocity().y <= -0.2f) {
             tAnimationState.getController().setAnimation(RawAnimation.begin().thenPlay(
                     "animation.red_cardinal.fall"));
             return PlayState.CONTINUE;
@@ -104,8 +104,8 @@ public class RedCardinalEntity extends AnimalEntity implements GeoEntity, Flutte
 
     public void tickMovement() {
         Vec3d vel;
-        if (!isOnGround() && this.getVelocity().y <= -0.1f) {
-            vel = new Vec3d(this.getVelocity().x, MathHelper.clamp(this.getVelocity().y, -0.1f, 0.5f), this.getVelocity().z);
+        if (!isOnGround() && this.getVelocity().y <= -0.2f) {
+            vel = new Vec3d(this.getVelocity().x, MathHelper.clamp(this.getVelocity().y, -0.2f, 0.5f), this.getVelocity().z);
             this.setVelocity(vel);
         }
         super.tickMovement();

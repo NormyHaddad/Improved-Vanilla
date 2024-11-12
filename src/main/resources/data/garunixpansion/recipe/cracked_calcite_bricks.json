@@ -3,9 +3,10 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0,
-  "group": "cracked_calcite_bricks",
   "ingredient": {
     "item": "garunixpansion:calcite_bricks"
   },
-  "result": "garunixpansion:cracked_calcite_bricks"
+  "result": {
+    "id": "garunixpansion:cracked_calcite_bricks"
+  }
 }

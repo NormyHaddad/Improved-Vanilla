@@ -5,7 +5,7 @@
     "dirt_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "minecraft:dirt"
+        "Name": "minecraft:end_stone"
       }
     },
     "foliage_placer": {
@@ -30,9 +30,9 @@
     "ignore_vines": false,
     "minimum_size": {
       "type": "minecraft:two_layers_feature_size",
-      "limit": 1,
-      "lower_size": 3,
-      "upper_size": 11
+      "limit": 4,
+      "lower_size": 1,
+      "upper_size": 9
     },
     "trunk_placer": {
       "type": "garunixpansion:strange_trunk_placer",

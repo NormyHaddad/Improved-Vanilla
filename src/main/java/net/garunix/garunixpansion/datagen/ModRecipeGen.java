@@ -1,34 +1,31 @@
 package net.garunix.garunixpansion.datagen;
 
+import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeProvider;
+import net.minecraft.registry.RegistryWrapper;
 
+import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
-//public class ModRecipeGen extends FabricRecipeProvider {
-//    public ModRecipeGen(FabricDataOutput output) {
-//        super(output);
-//    }
-//    public void generate(Consumer<RecipeProvider> exporter) {
-//        //offerPlanksRecipe(exporter, ModBlocks.MAPLE_PLANKS, ModBlocks.MAPLE_PLANKS);
-//    }
-//
-//    @Override
-//    public void generate(RecipeExporter exporter) {
-//
-//    }
-/*
+public class ModRecipeGen extends FabricRecipeProvider {
+
+    public ModRecipeGen(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+        super(output, registriesFuture);
+    }
+
+    public void generate(Consumer<RecipeProvider> exporter) {
+
+    }
+
     @Override
-    public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
-        // ...
-        fabricDataGenerator.addProvider(MyRecipeGenerator::new);
-        // ...
-    }*/
-//}
+    public void generate(RecipeExporter exporter) {
+
+    }
+}
 
 
-// ...
 
 

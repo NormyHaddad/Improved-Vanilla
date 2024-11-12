@@ -17,8 +17,10 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerCrop(ModBlocks.CYAN_ROSE_CROP, CyanRoseCrop.AGE, 0, 1, 2, 3);
-        blockStateModelGenerator.registerCrop(ModBlocks.RED_ROSE_CROP, OldRoseCrop.AGE, 0, 1, 2, 3);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.MAPLE_SAPLING, ModBlocks.POTTED_MAPLE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.MAHOE_SAPLING, ModBlocks.POTTED_MAHOE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.STRANGE_SAPLING, ModBlocks.POTTED_STRANGE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
     }
 
 

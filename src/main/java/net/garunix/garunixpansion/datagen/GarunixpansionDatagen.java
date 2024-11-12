@@ -10,9 +10,9 @@ public class GarunixpansionDatagen implements DataGeneratorEntrypoint {
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         final FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
-        //pack.addProvider(ModBlockLootTableProvider::new);
+        pack.addProvider(ModBlockLootTableProvider::new);
         pack.addProvider(ModModelProvider::new);
-        //pack.addProvider(ModRecipeGen::new);
+        pack.addProvider(ModRecipeGen::new);
         pack.addProvider(ModWorldGenerator::new);
     }
 

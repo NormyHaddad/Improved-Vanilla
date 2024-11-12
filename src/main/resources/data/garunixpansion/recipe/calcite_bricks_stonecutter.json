@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "minecraft:calcite"
   },
-  "result": "garunixpansion:calcite_bricks"
+  "result": {
+    "count": 1,
+    "id": "garunixpansion:calcite_bricks"
+  }
 }

@@ -8,21 +8,24 @@ import net.garunix.garunixpansion.block.custom.OldRoseCrop;
 import net.garunix.garunixpansion.item.ModItems;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.predicate.StatePredicate;
+import net.minecraft.registry.RegistryWrapper;
+
+import java.util.concurrent.CompletableFuture;
 
 
-//public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
-//    public ModBlockLootTableProvider(FabricDataOutput output) {
-//        super(output);
-//    }
-//
-//    @Override
-//    public void generate() {
-//        // use addDrop()
-//        BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.RED_ROSE_CROP).properties(StatePredicate.Builder.create()
-//                .exactMatch(OldRoseCrop.AGE, 3));
-//        addDrop(ModBlocks.RED_ROSE_CROP, cropDrops(ModBlocks.RED_ROSE_CROP, ModItems.RED_ROSE_SEEDS, ModBlocks.RED_ROSE.asItem(), builder));
-//        BlockStatePropertyLootCondition.Builder builder2 = BlockStatePropertyLootCondition.builder(ModBlocks.CYAN_ROSE_CROP).properties(StatePredicate.Builder.create()
-//                .exactMatch(CyanRoseCrop.AGE, 3));
-//        addDrop(ModBlocks.CYAN_ROSE_CROP, cropDrops(ModBlocks.CYAN_ROSE_CROP, ModItems.CYAN_ROSE_SEEDS, ModBlocks.CYAN_ROSE.asItem(), builder));
-//    }
-//}
+public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
+
+
+    protected ModBlockLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+        super(dataOutput, registryLookup);
+    }
+
+    @Override
+    public void generate() {
+        // use addDrop()
+        addPottedPlantDrops(ModBlocks.POTTED_MAPLE_SAPLING);
+        addPottedPlantDrops(ModBlocks.POTTED_MAHOE_SAPLING);
+        addPottedPlantDrops(ModBlocks.POTTED_STRANGE_SAPLING);
+
+    }
+}

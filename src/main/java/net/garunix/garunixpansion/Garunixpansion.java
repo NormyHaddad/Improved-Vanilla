@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.garunix.garunixpansion.block.ModBlocks;
 import net.garunix.garunixpansion.block.ModFlammableBlockRegistries;
+import net.garunix.garunixpansion.block.ModFuelRegistries;
 import net.garunix.garunixpansion.entity.ModBoats;
 import net.garunix.garunixpansion.entity.ModEntities;
 import net.garunix.garunixpansion.entity.custom.RedCardinalEntity;
@@ -53,6 +54,8 @@ public class Garunixpansion implements ModInitializer, TerraBlenderApi {
 		ModWorldGeneration.generateModWorldGen();
 
 		ModBoats.registerBoats();
+
+		ModFuelRegistries.registerFuel();
 
 		StrippableBlockRegistry.register(ModBlocks.MAPLE_LOG, ModBlocks.STRIPPED_MAPLE_LOG);
 		StrippableBlockRegistry.register(ModBlocks.MAPLE_LOG, ModBlocks.STRIPPED_MAPLE_LOG);
