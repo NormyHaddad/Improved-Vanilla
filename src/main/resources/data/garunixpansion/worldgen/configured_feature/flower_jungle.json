@@ -10,7 +10,7 @@
             "default_state": {
               "Name": "minecraft:allium"
             },
-            "high_chance": 0,
+            "high_chance": 0.6,
             "high_states": [
               {
                 "Name": "minecraft:dandelion"
